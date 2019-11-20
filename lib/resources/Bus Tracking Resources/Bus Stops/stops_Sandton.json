@@ -1,0 +1,512 @@
+[
+  {
+    "Latitude": -26.106994,
+    "Longitude": 28.063826,
+    "Name": "S2 1 - Milford Cl, 101 Katherine St",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.104741,
+    "Longitude": 28.068999,
+    "Name": "S2 2 - 131 Katherine St",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -26.101151,
+    "Longitude": 28.073243,
+    "Name": "S2 3 - 151 Katherine St",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -26.097865,
+    "Longitude": 28.079639,
+    "Name": "S2 4 - Barlow Park, Katherine St",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -26.093756,
+    "Longitude": 28.082078,
+    "Name": "S2 5 - Katherine Dr & Pongola Ave",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -26.089427,
+    "Longitude": 28.07924,
+    "Name": "S2 6 - Bowling Ave & Commerce Cres",
+    "StopNumber": 64
+  },
+  {
+    "Latitude": -26.084014,
+    "Longitude": 28.079464,
+    "Name": "S2 7 - Bowling Ave & Darwin Rd",
+    "StopNumber": 73
+  },
+  {
+    "Latitude": -26.079804,
+    "Longitude": 28.07953,
+    "Name": "S2 8 - Bowling Ave & Alma Rd",
+    "StopNumber": 82
+  },
+  {
+    "Latitude": -26.072173,
+    "Longitude": 28.077727,
+    "Name": "S2 9 - Bowling Ave & Blackford Rd",
+    "StopNumber": 91
+  },
+  {
+    "Latitude": -26.067658,
+    "Longitude": 28.074192,
+    "Name": "S2 10 - Morning Glen Mall",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.073033,
+    "Longitude": 28.073436,
+    "Name": "S2 11 - Ridgeway Ave & Stuart Ave",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.073078,
+    "Longitude": 28.078325,
+    "Name": "S2 12 - Bowling Ave & Blackford Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -26.082507,
+    "Longitude": 28.079665,
+    "Name": "S2 13 - Bowling Ave & Wendy Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.089191,
+    "Longitude": 28.079516,
+    "Name": "S2 14 - Bowling Ave & Commerce Cres",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -26.093688,
+    "Longitude": 28.082238,
+    "Name": "S2 15 - Katherine Dr & Pongola Cres",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.098077,
+    "Longitude": 28.079529,
+    "Name": "S2 16 - Barlow Park, Katherine St",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.101072,
+    "Longitude": 28.073359,
+    "Name": "S2 17 - Pinmill Farm, Katherine St",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -26.105223,
+    "Longitude": 28.068369,
+    "Name": "S2 18 - Park Inn, Katherine St",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.108282,
+    "Longitude": 28.061265,
+    "Name": "S2 19 - 88 Katherine St",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.104123,
+    "Longitude": 28.060424,
+    "Name": "S3 1 - Village Walk, Rivonia Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.1014,
+    "Longitude": 28.059033,
+    "Name": "S3 2 - Rivonia Rd & Fredman Dr",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.096865,
+    "Longitude": 28.056851,
+    "Name": "S3 3 - Sinosteel, Rivonia Rd",
+    "StopNumber": 31
+  },
+  {
+    "Latitude": -26.09145,
+    "Longitude": 28.056639,
+    "Name": "S3 4 - Rivonia Rd & South Rd",
+    "StopNumber": 40
+  },
+  {
+    "Latitude": -26.086752,
+    "Longitude": 28.058905,
+    "Name": "S3 5 - Rivonia Rd & Centre Rd",
+    "StopNumber": 59
+  },
+  {
+    "Latitude": -26.082831,
+    "Longitude": 28.060965,
+    "Name": "S3 6 - Morningside Shopping Centre, Rivonia Rd",
+    "StopNumber": 68
+  },
+  {
+    "Latitude": -26.079847,
+    "Longitude": 28.062605,
+    "Name": "S3 7 - 200 Rivonia Rd",
+    "StopNumber": 77
+  },
+  {
+    "Latitude": -26.071931,
+    "Longitude": 28.063943,
+    "Name": "S3 8 - Rivonia Rd & Kelvin Dr",
+    "StopNumber": 86
+  },
+  {
+    "Latitude": -26.063351,
+    "Longitude": 28.060236,
+    "Name": "S3 9 - Rivonia Rd & 3rd Ave",
+    "StopNumber": 95
+  },
+  {
+    "Latitude": -26.059799,
+    "Longitude": 28.059066,
+    "Name": "S3 10 - Rivonia Rd & 7th Ave",
+    "StopNumber": 104
+  },
+  {
+    "Latitude": -26.053894,
+    "Longitude": 28.058732,
+    "Name": "S3 11 - Rivonia Rd & 10th Ave",
+    "StopNumber": 113
+  },
+  {
+    "Latitude": -26.051488,
+    "Longitude": 28.058618,
+    "Name": "S3 12 - Rivonia Rd & 11th Ave",
+    "StopNumber": 122
+  },
+  {
+    "Latitude": -26.048997,
+    "Longitude": 28.06131,
+    "Name": "S3 13 - Wessels Rd & 12th Ave",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.054041,
+    "Longitude": 28.06163,
+    "Name": "S3 14 - Wessels Rd & 10th Ave",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -26.055248,
+    "Longitude": 28.05911,
+    "Name": "S3 15 - Rivonia Rd & 10th Ave",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.059404,
+    "Longitude": 28.059347,
+    "Name": "S3 16 - Rivonia Rd & 7th Ave",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.064812,
+    "Longitude": 28.061237,
+    "Name": "S3 17 - Rivonia Rd & 3rd Ave",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -26.070587,
+    "Longitude": 28.063667,
+    "Name": "S3 18 - Rivonia Rd & 1st Ave",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.075744,
+    "Longitude": 28.06513,
+    "Name": "S3 19 - The Wedge, Rivonia Rd",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.082247,
+    "Longitude": 28.061586,
+    "Name": "S3 20 - Morningside Shopping Center, Rivonia Rd",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -26.087903,
+    "Longitude": 28.058533,
+    "Name": "S3 21 - Rivonia Rd & Centre Rd",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -26.094852,
+    "Longitude": 28.056185,
+    "Name": "S3 22 - Rivonia Rd & Hill Rd",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.098874,
+    "Longitude": 28.058131,
+    "Name": "S3 23 - Sun International - Maslow, Rivonia Rd",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -26.103537,
+    "Longitude": 28.060369,
+    "Name": "S3 24 - Rivonia Rd & Linden St",
+    "StopNumber": 24
+  },
+  {
+    "Latitude": -26.107895,
+    "Longitude": 28.050798,
+    "Name": "S4 1 - 11 Alice Ln",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.100464,
+    "Longitude": 28.03448,
+    "Name": "S4 2 - Sandton Dr & Willian Nicole Dr",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -26.091244,
+    "Longitude": 28.023615,
+    "Name": "S4 3 - Republic Rd & Waggon St",
+    "StopNumber": 30
+  },
+  {
+    "Latitude": -26.096791,
+    "Longitude": 28.015177,
+    "Name": "S4 4 - Republic Rd & Garden St",
+    "StopNumber": 48
+  },
+  {
+    "Latitude": -26.100335,
+    "Longitude": 28.002452,
+    "Name": "S4 5 - Republic Rd & Bram Fisher Dr",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -26.101062,
+    "Longitude": 27.991132,
+    "Name": "S4 6 - Brightwater Commons",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.10011,
+    "Longitude": 28.002186,
+    "Name": "S4 7 - Republic Rd & Bram Fisher Dr",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.097445,
+    "Longitude": 28.013655,
+    "Name": "S4 8 - Republic Rd & Main St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.090474,
+    "Longitude": 28.024231,
+    "Name": "S4 9 - Republic Rd & Woodlands Dr",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -26.090263,
+    "Longitude": 28.026242,
+    "Name": "S4 10 - William Nicole Dr & Republic Rd",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.100102,
+    "Longitude": 28.034245,
+    "Name": "S4 11 - Sandton Dr & William Nicole Dr",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.10767,
+    "Longitude": 28.050738,
+    "Name": "S4 12 - Alice Lane & Sandton Dr",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -26.103716,
+    "Longitude": 28.052928,
+    "Name": "S5 1 - West St & Fredman Dr",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.101621,
+    "Longitude": 28.050696,
+    "Name": "S5 2 - West St & Grayston Dr",
+    "StopNumber": 25
+  },
+  {
+    "Latitude": -26.099889,
+    "Longitude": 28.050142,
+    "Name": "S5 3 - Benmore Shopping Center, Benmore rd",
+    "StopNumber": 34
+  },
+  {
+    "Latitude": -26.090758,
+    "Longitude": 28.04942,
+    "Name": "S5 4 - Benmore Rd & Montague Simpson Cres",
+    "StopNumber": 43
+  },
+  {
+    "Latitude": -26.086567,
+    "Longitude": 28.04718,
+    "Name": "S5 5 - Benmore Rd & Outspan Rd",
+    "StopNumber": 52
+  },
+  {
+    "Latitude": -26.083212,
+    "Longitude": 28.050749,
+    "Name": "S5 6 - Sandton Raquets Club, Ballyclare Dr",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.077334,
+    "Longitude": 28.04805,
+    "Name": "S5 7 - Ballyclare greenbelt",
+    "StopNumber": 70
+  },
+  {
+    "Latitude": -26.074327,
+    "Longitude": 28.043511,
+    "Name": "S5 8 - Sibella During, Ballyclare Dr",
+    "StopNumber": 88
+  },
+  {
+    "Latitude": -26.075838,
+    "Longitude": 28.027648,
+    "Name": "S5 9 - Bryanston Centre, Ballyclare Dr",
+    "StopNumber": 96
+  },
+  {
+    "Latitude": -26.064347,
+    "Longitude": 28.024265,
+    "Name": "S5 10 - William Nicol Dr & Ormonde St",
+    "StopNumber": 105
+  },
+  {
+    "Latitude": -26.0596,
+    "Longitude": 28.023167,
+    "Name": "S5 11 - Grosvenor Crossing, William Nicol Dr",
+    "StopNumber": 114
+  },
+  {
+    "Latitude": -26.052699,
+    "Longitude": 28.021139,
+    "Name": "S5 12 - William Nicol Dr & Wedgewood link",
+    "StopNumber": 122
+  },
+  {
+    "Latitude": -26.0446,
+    "Longitude": 28.017933,
+    "Name": "S5 13 - Parc Nicol, William Nicol Dr",
+    "StopNumber": 131
+  },
+  {
+    "Latitude": -26.041889,
+    "Longitude": 28.014856,
+    "Name": "S5 14 - Epsom Downs Shopping Centre, William Nicol Dr",
+    "StopNumber": 149
+  },
+  {
+    "Latitude": -26.032242,
+    "Longitude": 28.009531,
+    "Name": "S5 15 - William Nicol Dr & Leslie Ave",
+    "StopNumber": 158
+  },
+  {
+    "Latitude": -26.02451,
+    "Longitude": 28.011553,
+    "Name": "S5 16 - Montecasino Palazzo Circle, Montecasino Blvd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.028045,
+    "Longitude": 28.009762,
+    "Name": "S5 17 - William Nicol Dr & Montecasino Blvd",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -26.033477,
+    "Longitude": 28.010377,
+    "Name": "S5 18 - William Nicol Dr & Leslie Ave",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.041446,
+    "Longitude": 28.01491,
+    "Name": "S5 19 - Epsom Downs Shopping Centre, William Nicol Dr",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.04342,
+    "Longitude": 28.017009,
+    "Name": "S5 20 - 3021 William Nicol Dr",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -26.048347,
+    "Longitude": 28.020859,
+    "Name": "S5 21 - William Nicol Dr & Bryanston Dr",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -26.052018,
+    "Longitude": 28.021422,
+    "Name": "S5 22 - William Nicol Dr & Wedgewood Link",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.061281,
+    "Longitude": 28.023965,
+    "Name": "S5 23 - William Nicol Dr & Grosvenor Rd",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -26.075698,
+    "Longitude": 28.026963,
+    "Name": "S5 24 - Ballyclare Dr & William Nicol Dr",
+    "StopNumber": 24
+  },
+  {
+    "Latitude": -26.0742,
+    "Longitude": 28.043576,
+    "Name": "S5 25 - Joe Wright, Ballyclare Dr",
+    "StopNumber": 25
+  },
+  {
+    "Latitude": -26.077273,
+    "Longitude": 28.048235,
+    "Name": "S5 26 - Ballyclare greenbelt",
+    "StopNumber": 26
+  },
+  {
+    "Latitude": -26.083241,
+    "Longitude": 28.050998,
+    "Name": "S5 27 - Sandton Raquets Club, Ballyclare Dr",
+    "StopNumber": 27
+  },
+  {
+    "Latitude": -26.087856,
+    "Longitude": 28.047051,
+    "Name": "S5 28 - Benmore Rd & Outspan Rd",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -26.099974,
+    "Longitude": 28.050269,
+    "Name": "S5 29 - Benmore Shopping Center, Benmore Rd",
+    "StopNumber": 29
+  },
+  {
+    "Latitude": -26.102674,
+    "Longitude": 28.052013,
+    "Name": "S5 30 - West St & Fredman Dr",
+    "StopNumber": 30
+  }
+]

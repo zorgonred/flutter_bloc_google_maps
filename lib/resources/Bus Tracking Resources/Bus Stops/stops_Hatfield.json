@@ -1,0 +1,417 @@
+[
+  {
+    "Latitude": -25.750881,
+    "Longitude": 28.23254,
+    "Name": "H1 1 - Burnett St & Festival St",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.756665,
+    "Longitude": 28.224731,
+    "Name": "H1 2 - University Rd & Lynwood Rd",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -25.764713,
+    "Longitude": 28.227805,
+    "Name": "H1 3 - Roper St & Charles St",
+    "StopNumber": 30
+  },
+  {
+    "Latitude": -25.768676,
+    "Longitude": 28.234247,
+    "Name": "H1 4 - Brooklyn Office Park, Fehrsen St",
+    "StopNumber": 49
+  },
+  {
+    "Latitude": -25.770412,
+    "Longitude": 28.234355,
+    "Name": "H1 5 - Middle St & Brooklyn Circle",
+    "StopNumber": 58
+  },
+  {
+    "Latitude": -25.771968,
+    "Longitude": 28.229926,
+    "Name": "H1 6 - Middle St & Dey St",
+    "StopNumber": 67
+  },
+  {
+    "Latitude": -25.774048,
+    "Longitude": 28.224757,
+    "Name": "H1 7 - Middel St & Florence Ribeiro Dr",
+    "StopNumber": 76
+  },
+  {
+    "Latitude": -25.777014,
+    "Longitude": 28.226657,
+    "Name": "H1 8 - Main St & Florence Ribeiro Dr",
+    "StopNumber": 84
+  },
+  {
+    "Latitude": -25.775898,
+    "Longitude": 28.235677,
+    "Name": "H1 9 - Main St & Silver Oak Ave",
+    "StopNumber": 92
+  },
+  {
+    "Latitude": -25.774296,
+    "Longitude": 28.24077,
+    "Name": "H1 10 - Waterkloof Corner",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.772243,
+    "Longitude": 28.236031,
+    "Name": "H1 11 - Brooklyn Plaza, Fehrsen St",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.769129,
+    "Longitude": 28.234349,
+    "Name": "H1 12 - Fehrsen St & Muckleneuk St",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.764506,
+    "Longitude": 28.225937,
+    "Name": "H1 13 - Charles St & Roper St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.756686,
+    "Longitude": 28.224345,
+    "Name": "H1 14 - University Rd & Lynwood Rd",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.750779,
+    "Longitude": 28.231632,
+    "Name": "H1 15 - Burnett St & Festival St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.754413,
+    "Longitude": 28.240285,
+    "Name": "H2 1 - Jan Shoba & Duxbury Rd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.757485,
+    "Longitude": 28.239082,
+    "Name": "H2 2 - Jan Shoba & Lynwood Rd",
+    "StopNumber": 25
+  },
+  {
+    "Latitude": -25.759093,
+    "Longitude": 28.241955,
+    "Name": "H2 3 - Hillcrest Blvd, Lynwood Rd",
+    "StopNumber": 34
+  },
+  {
+    "Latitude": -25.761463,
+    "Longitude": 28.251122,
+    "Name": "H2 4 - Lynwood Rd & Kings Highway",
+    "StopNumber": 43
+  },
+  {
+    "Latitude": -25.762697,
+    "Longitude": 28.257786,
+    "Name": "H2 5 - Hoërskool Menlopark, Lynwood Rd",
+    "StopNumber": 52
+  },
+  {
+    "Latitude": -25.763653,
+    "Longitude": 28.265974,
+    "Name": "H2 6 - Lynwood Rd & Kiepersol Rd",
+    "StopNumber": 60
+  },
+  {
+    "Latitude": -25.766233,
+    "Longitude": 28.277476,
+    "Name": "H2 7 - Lynwood Rd & Meiring Naude St",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.765009,
+    "Longitude": 28.279584,
+    "Name": "H2 8 - Daventry St & Hallisham Ln",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.754942,
+    "Longitude": 28.27608,
+    "Name": "H2 9 - CSIR International Convention Centre",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.764648,
+    "Longitude": 28.267279,
+    "Name": "H2 10 - Lynwood Rd & Kiepersol Rd",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.762969,
+    "Longitude": 28.258393,
+    "Name": "H2 11 - Hoërskool Menlopark, Lynwood Rd",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.761799,
+    "Longitude": 28.252263,
+    "Name": "H2 12 - Lynwood Rd & Lower Ter Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.760911,
+    "Longitude": 28.247895,
+    "Name": "H2 13 - Lynwood Rd & Ox St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.759593,
+    "Longitude": 28.243056,
+    "Name": "H2 14 - Lynwood Rd & Pinaar St",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.754774,
+    "Longitude": 28.23981,
+    "Name": "H2 15 - Jan Shoba & Duxbury Rd",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.7432,
+    "Longitude": 28.236438,
+    "Name": "H3 1 - 1137 Church St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.743491,
+    "Longitude": 28.232448,
+    "Name": "H3 2 - Church St & Festival St",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -25.743882,
+    "Longitude": 28.226825,
+    "Name": "H3 3 - Church St & Hill St",
+    "StopNumber": 31
+  },
+  {
+    "Latitude": -25.744239,
+    "Longitude": 28.221349,
+    "Name": "H3 4 - Church St & Eastwood St",
+    "StopNumber": 40
+  },
+  {
+    "Latitude": -25.744719,
+    "Longitude": 28.214416,
+    "Name": "H3 5 - Church St & Johann St",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -25.7449,
+    "Longitude": 28.211476,
+    "Name": "H3 6 - Church St & Wessels St",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -25.745133,
+    "Longitude": 28.208429,
+    "Name": "H3 7 - Church St & Leyds St",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.747484,
+    "Longitude": 28.206162,
+    "Name": "H3 8 - Hamilton Ave & Francis Baard St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.748916,
+    "Longitude": 28.207396,
+    "Name": "H3 9 - Park St & Cilliers St",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.749474,
+    "Longitude": 28.212808,
+    "Name": "H3 10 - Park St & Wessels St",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.750095,
+    "Longitude": 28.218276,
+    "Name": "H3 11 - Park St & Beckett St",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.749916,
+    "Longitude": 28.223144,
+    "Name": "H3 12 - Park St & Eastwood St",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.749518,
+    "Longitude": 28.228746,
+    "Name": "H3 13 - Park St & Burnett St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.754423,
+    "Longitude": 28.240304,
+    "Name": "H5 1 - Jan Shoba & Duxbury Rd",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.75752,
+    "Longitude": 28.243098,
+    "Name": "H5 2 - Duxbury Rd & Lunnon Rd",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -25.761315,
+    "Longitude": 28.245538,
+    "Name": "H5 3 - Brooklyn Rd & Brooks St",
+    "StopNumber": 32
+  },
+  {
+    "Latitude": -25.769706,
+    "Longitude": 28.251092,
+    "Name": "H5 4 - Brooklyn Rd & 10th St",
+    "StopNumber": 40
+  },
+  {
+    "Latitude": -25.779223,
+    "Longitude": 28.256941,
+    "Name": "H5 5 - Dely Rd & Elandslaagte Rd",
+    "StopNumber": 59
+  },
+  {
+    "Latitude": -25.783739,
+    "Longitude": 28.264427,
+    "Name": "H5 6 - Garsfontein Rd & Selati St",
+    "StopNumber": 68
+  },
+  {
+    "Latitude": -25.786517,
+    "Longitude": 28.273578,
+    "Name": "H5 7 - Garsfontein Rd & Mante St",
+    "StopNumber": 77
+  },
+  {
+    "Latitude": -25.788409,
+    "Longitude": 28.275491,
+    "Name": "H5 8 - Garsfontein Rd & Lois Ave",
+    "StopNumber": 86
+  },
+  {
+    "Latitude": -25.789378,
+    "Longitude": 28.277465,
+    "Name": "H5 9 - Menlyn Retail Park",
+    "StopNumber": 95
+  },
+  {
+    "Latitude": -25.790826,
+    "Longitude": 28.279372,
+    "Name": "H5 10 - Garsfontein Rd & Corobay Ave",
+    "StopNumber": 104
+  },
+  {
+    "Latitude": -25.790699,
+    "Longitude": 28.281998,
+    "Name": "H5 11 - Muriel St & January Masilela Dr",
+    "StopNumber": 113
+  },
+  {
+    "Latitude": -25.783541,
+    "Longitude": 28.284932,
+    "Name": "H5 12 - Atterbury Rd & January Masilela Dr",
+    "StopNumber": 122
+  },
+  {
+    "Latitude": -25.782204,
+    "Longitude": 28.278781,
+    "Name": "H5 13 - Atterbury Rd & Lois St",
+    "StopNumber": 13,
+    "st": "Distributionr"
+  },
+  {
+    "Latitude": -25.782684,
+    "Longitude": 28.277716,
+    "Name": "H5 14 - Lois St & Atterbury Rd",
+    "StopNumber": 140
+  },
+  {
+    "Latitude": -25.786669,
+    "Longitude": 28.2765,
+    "Name": "H5 15 - Lois St & Gobie St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.787327,
+    "Longitude": 28.27386,
+    "Name": "H5 16 - Garsfontein Rd & 1st Rd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.78458,
+    "Longitude": 28.266413,
+    "Name": "H5 17 - Garsfontein Rd & Matroosberg Rd",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -25.779189,
+    "Longitude": 28.256678,
+    "Name": "H5 18 - Elandslaagte Rd & Dely Rd",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -25.770156,
+    "Longitude": 28.251273,
+    "Name": "H5 19 - Brooklyn Rd & 10th St",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -25.758738,
+    "Longitude": 28.243638,
+    "Name": "H5 20 - Duxbury Rd & Lunnon Rd",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -25.754807,
+    "Longitude": 28.239782,
+    "Name": "H5 21 - Jan Shoba & Duxbury Rd",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -25.741255,
+    "Longitude": 28.241944,
+    "Name": "H6 1 - Thompson St & Glyn St",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.733727,
+    "Longitude": 28.234248,
+    "Name": "H6 2 - OR Tambo Building, Soutpansbeg Rd\n(Dept of International Relations)",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -25.732717,
+    "Longitude": 28.2469,
+    "Name": "H6 3 - Soutpansberg Rd & Gordon Rd",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -25.7298,
+    "Longitude": 28.24593,
+    "Name": "H6 4 - Stead Ave & Webb Rd",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -25.742069,
+    "Longitude": 28.242476,
+    "Name": "H6 5 - Gordon Rd & Church St",
+    "StopNumber": 5
+  }
+]

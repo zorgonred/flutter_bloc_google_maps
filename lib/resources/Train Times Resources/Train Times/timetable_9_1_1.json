@@ -1,0 +1,561 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 1,
+      "fare_calculator_id": 1,
+      "address": "Grosvenor Street and Arcadia Street",
+      "name": "Hatfield Station",
+      "longitude": 28.236054,
+      "latitude": -25.748244,
+      "short_name": "Hatfield"
+    },
+    "day_type": {
+      "id": 1,
+      "name": "Tuesdays to Fridays"
+    },
+    "transfer": true,
+    "instructions": "From Rhodesfield Station to Hatfield Station: Take the East-West line. Transfer at Marlboro Station to the South-North line.",
+    "from_route": {
+      "id": 3,
+      "description": "East - West Commuter link",
+      "name": "O.R. Tambo to Sandton",
+      "short_name": "East-West"
+    },
+    "from_station": {
+      "id": 9,
+      "fare_calculator_id": 6,
+      "address": "Anson Street and Ventura Street",
+      "name": "Rhodesfield Station",
+      "longitude": 28.226234,
+      "latitude": -26.12815,
+      "short_name": "Rhodesfield"
+    },
+    "entries": [
+      {
+        "transferDepartTime": "05:42",
+        "transferArriveTime": "05:39",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:32",
+        "toTime": "06:12"
+      },
+      {
+        "transferDepartTime": "06:02",
+        "transferArriveTime": "05:49",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "05:42",
+        "toTime": "06:32"
+      },
+      {
+        "transferDepartTime": "06:22",
+        "transferArriveTime": "06:09",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "06:02",
+        "toTime": "06:52"
+      },
+      {
+        "transferDepartTime": "06:22",
+        "transferArriveTime": "06:19",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "06:12",
+        "toTime": "06:52"
+      },
+      {
+        "transferDepartTime": "06:32",
+        "transferArriveTime": "06:29",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "06:22",
+        "toTime": "07:02"
+      },
+      {
+        "transferDepartTime": "06:42",
+        "transferArriveTime": "06:39",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "06:32",
+        "toTime": "07:12"
+      },
+      {
+        "transferDepartTime": "06:52",
+        "transferArriveTime": "06:49",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:42",
+        "toTime": "07:22"
+      },
+      {
+        "transferDepartTime": "07:02",
+        "transferArriveTime": "06:59",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "06:52",
+        "toTime": "07:32"
+      },
+      {
+        "transferDepartTime": "07:12",
+        "transferArriveTime": "07:09",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:02",
+        "toTime": "07:42"
+      },
+      {
+        "transferDepartTime": "07:22",
+        "transferArriveTime": "07:19",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:12",
+        "toTime": "07:52"
+      },
+      {
+        "transferDepartTime": "07:32",
+        "transferArriveTime": "07:29",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "07:22",
+        "toTime": "08:02"
+      },
+      {
+        "transferDepartTime": "07:42",
+        "transferArriveTime": "07:39",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "07:32",
+        "toTime": "08:12"
+      },
+      {
+        "transferDepartTime": "07:52",
+        "transferArriveTime": "07:49",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "07:42",
+        "toTime": "08:22"
+      },
+      {
+        "transferDepartTime": "08:02",
+        "transferArriveTime": "07:59",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "07:52",
+        "toTime": "08:32"
+      },
+      {
+        "transferDepartTime": "08:12",
+        "transferArriveTime": "08:09",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "08:02",
+        "toTime": "08:42"
+      },
+      {
+        "transferDepartTime": "08:22",
+        "transferArriveTime": "08:19",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:12",
+        "toTime": "08:52"
+      },
+      {
+        "transferDepartTime": "08:32",
+        "transferArriveTime": "08:29",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "08:22",
+        "toTime": "09:02"
+      },
+      {
+        "transferDepartTime": "08:42",
+        "transferArriveTime": "08:39",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:32",
+        "toTime": "09:12"
+      },
+      {
+        "transferDepartTime": "08:52",
+        "transferArriveTime": "08:49",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:42",
+        "toTime": "09:22"
+      },
+      {
+        "transferDepartTime": "09:12",
+        "transferArriveTime": "09:09",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "09:02",
+        "toTime": "09:42"
+      },
+      {
+        "transferDepartTime": "09:32",
+        "transferArriveTime": "09:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:20",
+        "toTime": "10:02"
+      },
+      {
+        "transferDepartTime": "09:50",
+        "transferArriveTime": "09:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:40",
+        "toTime": "10:20"
+      },
+      {
+        "transferDepartTime": "10:10",
+        "transferArriveTime": "10:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:00",
+        "toTime": "10:40"
+      },
+      {
+        "transferDepartTime": "10:30",
+        "transferArriveTime": "10:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:20",
+        "toTime": "11:00"
+      },
+      {
+        "transferDepartTime": "10:50",
+        "transferArriveTime": "10:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:40",
+        "toTime": "11:20"
+      },
+      {
+        "transferDepartTime": "11:10",
+        "transferArriveTime": "11:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:00",
+        "toTime": "11:40"
+      },
+      {
+        "transferDepartTime": "11:30",
+        "transferArriveTime": "11:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:20",
+        "toTime": "12:00"
+      },
+      {
+        "transferDepartTime": "11:50",
+        "transferArriveTime": "11:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:40",
+        "toTime": "12:20"
+      },
+      {
+        "transferDepartTime": "12:10",
+        "transferArriveTime": "12:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:00",
+        "toTime": "12:40"
+      },
+      {
+        "transferDepartTime": "12:30",
+        "transferArriveTime": "12:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:20",
+        "toTime": "13:00"
+      },
+      {
+        "transferDepartTime": "12:50",
+        "transferArriveTime": "12:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:40",
+        "toTime": "13:20"
+      },
+      {
+        "transferDepartTime": "13:10",
+        "transferArriveTime": "13:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:00",
+        "toTime": "13:40"
+      },
+      {
+        "transferDepartTime": "13:30",
+        "transferArriveTime": "13:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:20",
+        "toTime": "14:00"
+      },
+      {
+        "transferDepartTime": "13:50",
+        "transferArriveTime": "13:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:40",
+        "toTime": "14:20"
+      },
+      {
+        "transferDepartTime": "14:10",
+        "transferArriveTime": "14:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:00",
+        "toTime": "14:40"
+      },
+      {
+        "transferDepartTime": "14:30",
+        "transferArriveTime": "14:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:20",
+        "toTime": "15:00"
+      },
+      {
+        "transferDepartTime": "14:50",
+        "transferArriveTime": "14:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:40",
+        "toTime": "15:20"
+      },
+      {
+        "transferDepartTime": "15:10",
+        "transferArriveTime": "15:07",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:00",
+        "toTime": "15:40"
+      },
+      {
+        "transferDepartTime": "15:30",
+        "transferArriveTime": "15:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:20",
+        "toTime": "16:00"
+      },
+      {
+        "transferDepartTime": "15:50",
+        "transferArriveTime": "15:47",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:40",
+        "toTime": "16:20"
+      },
+      {
+        "transferDepartTime": "16:00",
+        "transferArriveTime": "15:57",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:50",
+        "toTime": "16:30"
+      },
+      {
+        "transferDepartTime": "16:10",
+        "transferArriveTime": "16:07",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "16:00",
+        "toTime": "16:40"
+      },
+      {
+        "transferDepartTime": "16:20",
+        "transferArriveTime": "16:17",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "16:10",
+        "toTime": "16:50"
+      },
+      {
+        "transferDepartTime": "16:30",
+        "transferArriveTime": "16:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:20",
+        "toTime": "17:00"
+      },
+      {
+        "transferDepartTime": "16:40",
+        "transferArriveTime": "16:37",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "16:30",
+        "toTime": "17:10"
+      },
+      {
+        "transferDepartTime": "16:50",
+        "transferArriveTime": "16:47",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "16:40",
+        "toTime": "17:20"
+      },
+      {
+        "transferDepartTime": "17:00",
+        "transferArriveTime": "16:57",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:50",
+        "toTime": "17:30"
+      },
+      {
+        "transferDepartTime": "17:10",
+        "transferArriveTime": "17:07",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "17:00",
+        "toTime": "17:40"
+      },
+      {
+        "transferDepartTime": "17:20",
+        "transferArriveTime": "17:17",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "17:10",
+        "toTime": "17:50"
+      },
+      {
+        "transferDepartTime": "17:30",
+        "transferArriveTime": "17:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:20",
+        "toTime": "18:00"
+      },
+      {
+        "transferDepartTime": "17:40",
+        "transferArriveTime": "17:37",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "17:30",
+        "toTime": "18:10"
+      },
+      {
+        "transferDepartTime": "17:50",
+        "transferArriveTime": "17:47",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "17:40",
+        "toTime": "18:20"
+      },
+      {
+        "transferDepartTime": "18:00",
+        "transferArriveTime": "17:57",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:50",
+        "toTime": "18:30"
+      },
+      {
+        "transferDepartTime": "18:10",
+        "transferArriveTime": "18:07",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "18:00",
+        "toTime": "18:40"
+      },
+      {
+        "transferDepartTime": "18:20",
+        "transferArriveTime": "18:17",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "18:10",
+        "toTime": "18:50"
+      },
+      {
+        "transferDepartTime": "18:30",
+        "transferArriveTime": "18:27",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:20",
+        "toTime": "19:00"
+      },
+      {
+        "transferDepartTime": "18:40",
+        "transferArriveTime": "18:37",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "18:30",
+        "toTime": "19:10"
+      },
+      {
+        "transferDepartTime": "19:00",
+        "transferArriveTime": "18:57",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:50",
+        "toTime": "19:30"
+      },
+      {
+        "transferDepartTime": "19:22",
+        "transferArriveTime": "19:19",
+        "toCars": 8,
+        "fromCars": 4,
+        "fromTime": "19:12",
+        "toTime": "19:52"
+      },
+      {
+        "transferDepartTime": "19:42",
+        "transferArriveTime": "19:39",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:32",
+        "toTime": "20:12"
+      },
+      {
+        "transferDepartTime": "20:02",
+        "transferArriveTime": "19:59",
+        "toCars": 4,
+        "fromCars": 8,
+        "fromTime": "19:52",
+        "toTime": "20:32"
+      },
+      {
+        "transferDepartTime": "20:22",
+        "transferArriveTime": "20:19",
+        "toCars": 4,
+        "fromCars": 8,
+        "fromTime": "20:12",
+        "toTime": "20:52"
+      },
+      {
+        "transferDepartTime": "20:42",
+        "transferArriveTime": "20:37",
+        "toCars": 4,
+        "fromCars": 8,
+        "fromTime": "20:30",
+        "toTime": "21:12"
+      }
+    ],
+    "transfer_station": {
+      "id": 5,
+      "fare_calculator_id": 5,
+      "address": "Marlboro Drive",
+      "name": "Marlboro Station",
+      "longitude": 28.111108,
+      "latitude": -26.083504,
+      "short_name": "Marlboro"
+    },
+    "to_route": {
+      "id": 2,
+      "description": "South - North Commuter link",
+      "name": "Park to Hatfield",
+      "short_name": "South-North"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 1499,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

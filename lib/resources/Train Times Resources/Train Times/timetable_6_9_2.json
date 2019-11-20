@@ -1,0 +1,270 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 9,
+      "fare_calculator_id": 6,
+      "address": "Anson Street and Ventura Street",
+      "name": "Rhodesfield Station",
+      "longitude": 28.226234,
+      "latitude": -26.12815,
+      "short_name": "Rhodesfield"
+    },
+    "day_type": {
+      "id": 2,
+      "name": "Sundays"
+    },
+    "transfer": false,
+    "instructions": "From Sandton Station to Rhodesfield Station: Take the West-East line. Use only REAR two coaches.",
+    "from_route": {
+      "id": 4,
+      "description": "West - East Commuter link",
+      "name": "Sandton to O.R Tambo",
+      "short_name": "West-East"
+    },
+    "from_station": {
+      "id": 6,
+      "fare_calculator_id": 8,
+      "address": "Rivonia Street and West Street",
+      "name": "Sandton Station",
+      "longitude": 28.057093,
+      "latitude": -26.108444,
+      "short_name": "Sandton"
+    },
+    "entries": [
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:27",
+        "toTime": "05:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:57",
+        "toTime": "06:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:27",
+        "toTime": "06:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:57",
+        "toTime": "07:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:27",
+        "toTime": "07:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:57",
+        "toTime": "08:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:27",
+        "toTime": "08:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:57",
+        "toTime": "09:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:27",
+        "toTime": "09:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:57",
+        "toTime": "10:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:27",
+        "toTime": "10:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:57",
+        "toTime": "11:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:27",
+        "toTime": "11:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:57",
+        "toTime": "12:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:27",
+        "toTime": "12:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:57",
+        "toTime": "13:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:27",
+        "toTime": "13:39"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:57",
+        "toTime": "14:09"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:22",
+        "toTime": "14:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:42",
+        "toTime": "14:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:02",
+        "toTime": "15:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:22",
+        "toTime": "15:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:42",
+        "toTime": "15:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:02",
+        "toTime": "16:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:22",
+        "toTime": "16:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:42",
+        "toTime": "16:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:02",
+        "toTime": "17:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:22",
+        "toTime": "17:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:42",
+        "toTime": "17:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:02",
+        "toTime": "18:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:22",
+        "toTime": "18:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:42",
+        "toTime": "18:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:02",
+        "toTime": "19:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:22",
+        "toTime": "19:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:42",
+        "toTime": "19:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:02",
+        "toTime": "20:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:28",
+        "toTime": "20:40"
+      }
+    ],
+    "to_route": {
+      "id": 4,
+      "description": "West - East Commuter link",
+      "name": "Sandton to O.R Tambo",
+      "short_name": "West-East"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 2465,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

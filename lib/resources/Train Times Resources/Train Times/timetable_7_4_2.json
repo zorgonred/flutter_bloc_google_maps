@@ -1,0 +1,234 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 4,
+      "fare_calculator_id": 4,
+      "address": "Old Pretoria Main Road (R101) and New Road/Grand Central Boulevard",
+      "name": "Midrand Station",
+      "longitude": 28.135615,
+      "latitude": -25.992427,
+      "short_name": "Midrand"
+    },
+    "day_type": {
+      "id": 2,
+      "name": "Sundays"
+    },
+    "transfer": false,
+    "instructions": "From Rosebank Station to Midrand Station: Take the South-North line.",
+    "from_route": {
+      "id": 2,
+      "description": "South - North Commuter link",
+      "name": "Park to Hatfield",
+      "short_name": "South-North"
+    },
+    "from_station": {
+      "id": 7,
+      "fare_calculator_id": 9,
+      "address": "Oxford Road and Jellicoe Avenue",
+      "name": "Rosebank Station",
+      "longitude": 28.044643,
+      "latitude": -26.148273,
+      "short_name": "Rosebank"
+    },
+    "entries": [
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:34",
+        "toTime": "05:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:04",
+        "toTime": "06:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:34",
+        "toTime": "06:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:04",
+        "toTime": "07:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:34",
+        "toTime": "07:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:04",
+        "toTime": "08:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:34",
+        "toTime": "08:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:04",
+        "toTime": "09:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:34",
+        "toTime": "09:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:04",
+        "toTime": "10:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:34",
+        "toTime": "10:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:04",
+        "toTime": "11:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:34",
+        "toTime": "11:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:04",
+        "toTime": "12:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:34",
+        "toTime": "12:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:04",
+        "toTime": "13:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:34",
+        "toTime": "13:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:04",
+        "toTime": "14:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:34",
+        "toTime": "14:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:04",
+        "toTime": "15:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:34",
+        "toTime": "15:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:04",
+        "toTime": "16:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:34",
+        "toTime": "16:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:04",
+        "toTime": "17:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:34",
+        "toTime": "17:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:04",
+        "toTime": "18:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:34",
+        "toTime": "18:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:04",
+        "toTime": "19:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:34",
+        "toTime": "19:48"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:04",
+        "toTime": "20:18"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:34",
+        "toTime": "20:48"
+      }
+    ],
+    "to_route": {
+      "id": 2,
+      "description": "South - North Commuter link",
+      "name": "Park to Hatfield",
+      "short_name": "South-North"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 1093,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

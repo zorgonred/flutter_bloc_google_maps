@@ -1,0 +1,344 @@
+[
+  {
+    "Latitude": -25.990565,
+    "Longitude": 28.127332,
+    "Name": "M1 1 - 106 16th Rd",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -25.98263,
+    "Longitude": 28.129359,
+    "Name": "M1 2 - 16th Rd & Superior CI",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -25.979152,
+    "Longitude": 28.130639,
+    "Name": "M1 3 - 16th Rd & Medical Rd",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -25.974869,
+    "Longitude": 28.13217,
+    "Name": "M1 4 - Pharmaceutical Rd & 16th Rd",
+    "StopNumber": 45
+  },
+  {
+    "Latitude": -25.970678,
+    "Longitude": 28.130927,
+    "Name": "M1 5 - 153 15th Rd",
+    "StopNumber": 53
+  },
+  {
+    "Latitude": -25.964344,
+    "Longitude": 28.133135,
+    "Name": "M1 6 - George Rd & 15th Rd",
+    "StopNumber": 62
+  },
+  {
+    "Latitude": -25.9601,
+    "Longitude": 28.134646,
+    "Name": "M1 7 - 232 15th Rd",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.961355,
+    "Longitude": 28.137041,
+    "Name": "M1 8 - Tilbury Business Park, 16th Rd",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.965049,
+    "Longitude": 28.135761,
+    "Name": "M1 9 - 16th Rd & George Rd",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.967844,
+    "Longitude": 28.134759,
+    "Name": "M1 10 - Business Connection Park, 16th Rd",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.971728,
+    "Longitude": 28.133392,
+    "Name": "M1 11 - 269 16th Rd",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.974851,
+    "Longitude": 28.132308,
+    "Name": "M1 12 - 16th Rd & Pharmaceutical Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.979581,
+    "Longitude": 28.130645,
+    "Name": "M1 13 - Central Park, 16th Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.98261,
+    "Longitude": 28.129551,
+    "Name": "M1 14 - 16th Rd & Superior CI",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.990825,
+    "Longitude": 28.127526,
+    "Name": "M1 15 - 59 16th Rd",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.995506,
+    "Longitude": 28.128549,
+    "Name": "M2 1 - Old Pretoria Rd & Alexandra Ave",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.98979,
+    "Longitude": 28.121435,
+    "Name": "M2 2 - Unisa SBL, Smuts Rd",
+    "StopNumber": 29
+  },
+  {
+    "Latitude": -25.98261,
+    "Longitude": 28.119183,
+    "Name": "M2 3 - 6th Rd & 5th Rd",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -25.979336,
+    "Longitude": 28.120146,
+    "Name": "M2 4 - 6th Road opposite Shell Garage",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -25.977582,
+    "Longitude": 28.118515,
+    "Name": "M2 5 - Lever Rd & New Rd",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -25.969923,
+    "Longitude": 28.120359,
+    "Name": "M2 6 - Lever Rd & 13th Rd",
+    "StopNumber": 63
+  },
+  {
+    "Latitude": -25.968777,
+    "Longitude": 28.126165,
+    "Name": "M2 7 - Vodaworld, 14th Rd",
+    "StopNumber": 79
+  },
+  {
+    "Latitude": -25.962211,
+    "Longitude": 28.128466,
+    "Name": "M2 8 - 14th Rd, Skurweberg St",
+    "StopNumber": 87
+  },
+  {
+    "Latitude": -25.956493,
+    "Longitude": 28.130495,
+    "Name": "M2 8 - 14th Rd & Skurweberg St",
+    "StopNumber": 96
+  },
+  {
+    "Latitude": -25.952827,
+    "Longitude": 28.123772,
+    "Name": "M2 9 - Protea Hotel Midrand, 14th Rd",
+    "StopNumber": 103
+  },
+  {
+    "Latitude": -25.959789,
+    "Longitude": 28.122605,
+    "Name": "M2 10 - Coubrough Rd & Lever Rd",
+    "StopNumber": 111
+  },
+  {
+    "Latitude": -25.968659,
+    "Longitude": 28.126336,
+    "Name": "M2 11 - Lever Rd & Kiaat St",
+    "StopNumber": 120
+  },
+  {
+    "Latitude": -25.970468,
+    "Longitude": 28.120428,
+    "Name": "M2 12 - Vodaworld, 14th Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.977707,
+    "Longitude": 28.118787,
+    "Name": "M2 13 - Lever Rd & 13th Rd",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.979927,
+    "Longitude": 28.120259,
+    "Name": "M2 15 - 6th Road next to Shell Garage",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.983851,
+    "Longitude": 28.119296,
+    "Name": "M2 16 - 6th Rd & 5th Rd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.989371,
+    "Longitude": 28.121786,
+    "Name": "M2 17 - Unisa SBL, Smuts Rd",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -25.995335,
+    "Longitude": 28.128928,
+    "Name": "M2 18 - Old Pretoria Rd & Alexandra Ave",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.002453,
+    "Longitude": 28.131,
+    "Name": "M3 1 - Gallagher Estate, Richards Dr",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.008459,
+    "Longitude": 28.126163,
+    "Name": "M3 2 - 778 Richards Dr",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -26.010073,
+    "Longitude": 28.121904,
+    "Name": "M3 3 - Le Roux Ave & Old Pretoria Rd",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -26.006706,
+    "Longitude": 28.116536,
+    "Name": "M3 4 - Bekker Rd & Montrose St",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -26.00927,
+    "Longitude": 28.114662,
+    "Name": "M3 5 - Bekker Rd & Mac Mac Rd",
+    "StopNumber": 59
+  },
+  {
+    "Latitude": -26.010296,
+    "Longitude": 28.103033,
+    "Name": "M3 6 - Maxwell drive & Allandale Rd",
+    "StopNumber": 68
+  },
+  {
+    "Latitude": -26.013396,
+    "Longitude": 28.100232,
+    "Name": "M3 7 - Waterfall Estate Hospital, Maxwell Dr",
+    "StopNumber": 77
+  },
+  {
+    "Latitude": -26.032282,
+    "Longitude": 28.080632,
+    "Name": "M3 8 - Maxwell Dr & Marise Dr",
+    "StopNumber": 85
+  },
+  {
+    "Latitude": -26.036776,
+    "Longitude": 28.080594,
+    "Name": "M3 9 - Sunninghill Village Shopping Center",
+    "StopNumber": 94
+  },
+  {
+    "Latitude": -26.041332,
+    "Longitude": 28.085329,
+    "Name": "M3 10 - Maxwell Dr & Witkoppen Rd",
+    "StopNumber": 103
+  },
+  {
+    "Latitude": -26.038398,
+    "Longitude": 28.070095,
+    "Name": "M311 - Sunninghill Hospital, Bowling Ave",
+    "StopNumber": 112
+  },
+  {
+    "Latitude": -26.034431,
+    "Longitude": 28.068932,
+    "Name": "M3 12 - Simba Rd & Nanyuki Rd",
+    "StopNumber": 121
+  },
+  {
+    "Latitude": -26.032841,
+    "Longitude": 28.066944,
+    "Name": "M3 13 - 1 Eglin Rd",
+    "StopNumber": 139
+  },
+  {
+    "Latitude": -26.031918,
+    "Longitude": 28.063184,
+    "Name": "M3 14 - The Square, Leeuwkop Rd",
+    "StopNumber": 147
+  },
+  {
+    "Latitude": -26.029999,
+    "Longitude": 28.060853,
+    "Name": "M3 15 - Chilli Lane Shopping Centre, Rivonia Rd",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.031908,
+    "Longitude": 28.070548,
+    "Name": "M3 16 - Van der Bijl Ave & Nanyuki Rd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.032361,
+    "Longitude": 28.080399,
+    "Name": "M3 17 - Maxwell Dr & Peltier Dr",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -26.012964,
+    "Longitude": 28.099958,
+    "Name": "M3 18 - Waterfall Estate Hospital, Maxwell Dr",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.009864,
+    "Longitude": 28.104023,
+    "Name": "M3 19 - Allandale Rd & Maxwell Dr",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.008729,
+    "Longitude": 28.114901,
+    "Name": "M3 20 - Bekker Rd & Mac Mac Rd",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -26.006776,
+    "Longitude": 28.116328,
+    "Name": "M3 21 - Bekker Rd & Montrose Rd",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -26.009749,
+    "Longitude": 28.12194,
+    "Name": "M3 22 - Le Roux Ave & Old Pretoria Rd",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.008321,
+    "Longitude": 28.126137,
+    "Name": "M3 23 - 778 Richards Dr",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -26.002253,
+    "Longitude": 28.130967,
+    "Name": "M3 24 - Gallagher Estate, Richards Dr",
+    "StopNumber": 24
+  }
+]

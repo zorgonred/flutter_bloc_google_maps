@@ -1,0 +1,129 @@
+[
+  {
+    "Latitude": -26.192736,
+    "Longitude": 28.039611,
+    "Name": "J1 1 - Civic Center",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.186863,
+    "Longitude": 28.04081,
+    "Name": "J1 2 - Joubert St & Sam Hancock St",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -26.182456,
+    "Longitude": 28.038683,
+    "Name": "J1 3 - St Andrews Rd & Blackwood Ave",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -26.181318,
+    "Longitude": 28.035698,
+    "Name": "J1 4 - St Davids Pl & St Andrews Rd",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.178011,
+    "Longitude": 28.040724,
+    "Name": "J1 5 - 15 Jubilee St (nearest cnr: Queens Rd)",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.17679,
+    "Longitude": 28.04428,
+    "Name": "J1 6 - Wits Medical School, Jubilee St",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.180231,
+    "Longitude": 28.045532,
+    "Name": "J1 7 - Carse O' Gowrie Rd",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.182067,
+    "Longitude": 28.042823,
+    "Name": "J1 8 - Queens Rd & Junction Ave",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.184751,
+    "Longitude": 28.043998,
+    "Name": "J1 9 - Queens Rd (nearest cnr: Empire Rd)",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -26.187936,
+    "Longitude": 28.041058,
+    "Name": "J1 10 - Constitution Hill",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.191864,
+    "Longitude": 28.041465,
+    "Name": "J1 11 - Civic Center",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.20274,
+    "Longitude": 28.039428,
+    "Name": "J2 1 - Bank City, Simmonds St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.204699,
+    "Longitude": 28.039711,
+    "Name": "J2 2 - Simmonds St & Market St",
+    "StopNumber": 24
+  },
+  {
+    "Latitude": -26.207674,
+    "Longitude": 28.040555,
+    "Name": "J2 3 - Marshall St & Harrison St",
+    "StopNumber": 33
+  },
+  {
+    "Latitude": -26.207012,
+    "Longitude": 28.046353,
+    "Name": "J2 4 - Boston College, Marshall St",
+    "StopNumber": 49
+  },
+  {
+    "Latitude": -26.206611,
+    "Longitude": 28.050016,
+    "Name": "J2 5 - ABSA Bank, Marshall St",
+    "stt": 19,
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.208227,
+    "Longitude": 28.041224,
+    "Name": "J2 6 - Reef Hotel, Anderson St",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.208497,
+    "Longitude": 28.039161,
+    "Name": "J2 7 - Anderson St (nearest cnr: Simmonds St)",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.207624,
+    "Longitude": 28.038244,
+    "Name": "J2 8 - Anglo American, Sauer St & Main St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.205383,
+    "Longitude": 28.037948,
+    "Name": "J2 9 - Sauer St & Market St",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -26.202737,
+    "Longitude": 28.03757,
+    "Name": "J2 10 - Sauer St & Jeppe St (nearest cnr: Kerk St)",
+    "StopNumber": 10
+  }
+]

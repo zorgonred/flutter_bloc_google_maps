@@ -1,0 +1,170 @@
+[
+  {
+    "Latitude": -25.752943,
+    "Longitude": 28.188544,
+    "Name": "P3 1 - Transvaal Museum, Paul Kruger St",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.750751,
+    "Longitude": 28.185919,
+    "Name": "P3 2 - Bosman St & Nana Sita St",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -25.748799,
+    "Longitude": 28.185732,
+    "Name": "P3 3 - Bosman St & Pretorius St",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -25.74605,
+    "Longitude": 28.185503,
+    "Name": "P3 4 - Bosman St & Church St",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -25.743012,
+    "Longitude": 28.185258,
+    "Name": "P3 5 - Bosman St & Johannes Ramokhoase St",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -25.741845,
+    "Longitude": 28.185137,
+    "Name": "P3 6 - Bosman St & Struben St",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -25.739049,
+    "Longitude": 28.189425,
+    "Name": "P3 7 - Pretoria Zoo, Boom St",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.741034,
+    "Longitude": 28.190116,
+    "Name": "P3 8 - National Department of Health, Thabo Sehume St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.741694,
+    "Longitude": 28.191853,
+    "Name": "P3 9 - Nursing Academy, Struben St & Lilian Ngoyi St",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.742817,
+    "Longitude": 28.195233,
+    "Name": "P3 10 - Sisulu St & Johannes Ramokhoase St",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.745034,
+    "Longitude": 28.195426,
+    "Name": "P3 11 - South African Reserve Bank, Sisulu St",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.747706,
+    "Longitude": 28.195606,
+    "Name": "P3 12 - Louis Pasteur Hospital, Sisulu St",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.748609,
+    "Longitude": 28.198387,
+    "Name": "P3 13 - Medi-Clinic, Du Toit St & Francis Baard St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.748347,
+    "Longitude": 28.201457,
+    "Name": "P3 14 - Francis Baard St",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.749108,
+    "Longitude": 28.206268,
+    "Name": "P3 15 - Troye St & Park St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.7535,
+    "Longitude": 28.203694,
+    "Name": "P3 16 - Kotze St & Jubilee St",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.75217,
+    "Longitude": 28.200035,
+    "Name": "P3 17 - Kotze St & Inez St",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -25.751891,
+    "Longitude": 28.195112,
+    "Name": "P3 18 - Sisulu St & Visagie St",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -25.753865,
+    "Longitude": 28.191184,
+    "Name": "P3 19 - Burgers Park, Thabo Sehume St",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -25.762806,
+    "Longitude": 28.198383,
+    "Name": "P4 1 - Unisa, Elandspoort St",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.771056,
+    "Longitude": 28.210818,
+    "Name": "P4 2 - George Storrar Dr & Leyds St",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -25.770289,
+    "Longitude": 28.214979,
+    "Name": "P4 3 - SABS, Totius St",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -25.767667,
+    "Longitude": 28.22,
+    "Name": "P4 4 - Harlequins Office Park, Totius St",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -25.767078,
+    "Longitude": 28.221859,
+    "Name": "P4 5 - Totius St & Florence Ribeiro Dr",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -25.773919,
+    "Longitude": 28.223408,
+    "Name": "P4 6 - George Storrar Dr & Florence Ribeiro Dr",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -25.772049,
+    "Longitude": 28.216535,
+    "Name": "P4 7 - Little Company of Mary, George Storrar Dr",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.771357,
+    "Longitude": 28.211357,
+    "Name": "P4 8 - George Storrar Dr & Leyds St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.76312,
+    "Longitude": 28.197564,
+    "Name": "P4 9 - Unisa, Elandspoort St",
+    "StopNumber": 9
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "Latitude": -25.858715,
+    "Longitude": 28.196529,
+    "Name": "C1 1 - Super Sport Park",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.868786,
+    "Longitude": 28.196937,
+    "Name": "C1 2 - Bylsbridge Promenade,Centaurus Rd",
+    "StopNumber": 29
+  },
+  {
+    "Latitude": -25.873149,
+    "Longitude": 28.194729,
+    "Name": "C1 3 - John Vorster Dr & Olievenhoutbosch Rd",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -25.873595,
+    "Longitude": 28.189397,
+    "Name": "C1 4 - 102 Witch-Hazel Ave",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -25.872356,
+    "Longitude": 28.184903,
+    "Name": "C1 5 - 160 Witch-hazel Ave",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -25.874285,
+    "Longitude": 28.181809,
+    "Name": "C1 6 - 200 Witch-hazel Ave",
+    "StopNumber": 63
+  },
+  {
+    "Latitude": -25.877912,
+    "Longitude": 28.175989,
+    "Name": "C1 7 - Eco Park Blvd & Witch-Hazel Ave",
+    "StopNumber": 72
+  },
+  {
+    "Latitude": -25.87874,
+    "Longitude": 28.173293,
+    "Name": "C1 8 - Eco Blvd II, Witch-Hazel Ave",
+    "StopNumber": 81
+  },
+  {
+    "Latitude": -25.881219,
+    "Longitude": 28.171239,
+    "Name": "C1 9 - 6 Eco Fusion, Witch-Hazel Ave",
+    "StopNumber": 90
+  },
+  {
+    "Latitude": -25.884604,
+    "Longitude": 28.169573,
+    "Name": "C1 10 - 350 Eco Fusion, Witch-Hazel Ave",
+    "StopNumber": 109
+  },
+  {
+    "Latitude": -25.886616,
+    "Longitude": 28.169913,
+    "Name": "C1 11 - Eco Fusion, Witch-Hazel Ave",
+    "StopNumber": 117
+  },
+  {
+    "Latitude": -25.887264,
+    "Longitude": 28.171603,
+    "Name": "C1 12 - Eco Fusion, Witch-Hazel Ave",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.892545,
+    "Longitude": 28.184048,
+    "Name": "C1 13 - Testing Station, Nellmapius Dr & Sand St",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.891831,
+    "Longitude": 28.191545,
+    "Name": "C1 14 - Denel, Nellmapius Dr",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.884235,
+    "Longitude": 28.196699,
+    "Name": "C1 15 - Luton St & Newark St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.880142,
+    "Longitude": 28.195025,
+    "Name": "C1 16 - Logan Ave & Mirabel St",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.869117,
+    "Longitude": 28.19708,
+    "Name": "C1 17 - Bylsbridge Promenade, Centaurus Rd",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -25.85811,
+    "Longitude": 28.195664,
+    "Name": "C1 18 - Supersport Park",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -25.858695,
+    "Longitude": 28.191124,
+    "Name": "C2 1 - Spooral Park, Lenchen Ave",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.860656,
+    "Longitude": 28.189297,
+    "Name": "C2 2 - Lenchen Ave & Heuwel Ave",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -25.864679,
+    "Longitude": 28.185132,
+    "Name": "C2 3 - Centurion Cresent Shopping Center",
+    "StopNumber": 38
+  },
+  {
+    "Latitude": -25.871458,
+    "Longitude": 28.175566,
+    "Name": "C2 4 - Lenchen Ave & Eco Park Rd",
+    "StopNumber": 45
+  },
+  {
+    "Latitude": -25.876556,
+    "Longitude": 28.164153,
+    "Name": "C2 5 - Centurion Lifestyle Centre, Lenchen Ave",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -25.873533,
+    "Longitude": 28.152515,
+    "Name": "C2 6 - Escort Ave & Theuns van Niekerk St",
+    "StopNumber": 69
+  },
+  {
+    "Latitude": -25.879518,
+    "Longitude": 28.149117,
+    "Name": "C2 7 - Wierda Glen Estate East",
+    "StopNumber": 78
+  },
+  {
+    "Latitude": -25.880152,
+    "Longitude": 28.145017,
+    "Name": "C2 8 - Wierda Glen Estate West",
+    "StopNumber": 87
+  },
+  {
+    "Latitude": -25.88254,
+    "Longitude": 28.14073,
+    "Name": "C2 9 - Lenchen Ave & Rooihuiskraal Rd",
+    "StopNumber": 95
+  },
+  {
+    "Latitude": -25.880918,
+    "Longitude": 28.133792,
+    "Name": "C2 10 - Lenchen Ave & Assegai Rd",
+    "StopNumber": 103
+  },
+  {
+    "Latitude": -25.875298,
+    "Longitude": 28.131666,
+    "Name": "C2 11 - Amberfield Glen, Lenchen Ave",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.872636,
+    "Longitude": 28.135409,
+    "Name": "C2 12 - Fouriesburg Rd & Reddersburg Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.870403,
+    "Longitude": 28.136506,
+    "Name": "C2 13 - Raslouw Lifestyle Center",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.871685,
+    "Longitude": 28.139023,
+    "Name": "C2 14 - The Mall @ Reds",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.870541,
+    "Longitude": 28.151541,
+    "Name": "C2 15 - Reddersburg Rd & Theuns van Niekerk St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.872546,
+    "Longitude": 28.153386,
+    "Name": "C2 16 - Escort Ave & Howick St",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.87651,
+    "Longitude": 28.163942,
+    "Name": "C2 17 - Centurion Lifestyle Centre, Lenchen Ave",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -25.870593,
+    "Longitude": 28.176817,
+    "Name": "C2 18 - Lenchen Ave & Eco Park Rd",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -25.864739,
+    "Longitude": 28.183797,
+    "Name": "C2 19 - Centurion Cresent Shopping Center",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -25.859911,
+    "Longitude": 28.18788,
+    "Name": "C2 20 - Lenchen Ave North & South St",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -25.85726,
+    "Longitude": 28.190347,
+    "Name": "C2 21 - Centurion Lake Hotel, Lenchen Ave North",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -25.854037,
+    "Longitude": 28.185616,
+    "Name": "C3 1 - Protea Hotel Waterfront, Gerhard St",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -25.857648,
+    "Longitude": 28.182399,
+    "Name": "C3 2 - Hendrik Verwoerd Ave & South St",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -25.859931,
+    "Longitude": 28.176991,
+    "Name": "C3 3 - Hendrik Verwoerd Ave & Hippo Ave",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -25.862497,
+    "Longitude": 28.167972,
+    "Name": "C3 4 - Hendrik Verwoerd Ave & Galway Ave",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -25.86239,
+    "Longitude": 28.164164,
+    "Name": "C3 5 - Hendrik Verwoerd Ave & Old Johannesburg Rd",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -25.860768,
+    "Longitude": 28.157756,
+    "Name": "C3 6 - Willem Botha St & Mulders Mile",
+    "StopNumber": 63
+  },
+  {
+    "Latitude": -25.860309,
+    "Longitude": 28.14821,
+    "Name": "C3 7 - Willem Botha St & Hendrik St",
+    "StopNumber": 72
+  },
+  {
+    "Latitude": -25.85746,
+    "Longitude": 28.145093,
+    "Name": "C3 8 - Willem Botha St & Koedoe St",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.855583,
+    "Longitude": 28.142684,
+    "Name": "C3 9 - Ruimte Main Rd & Willem Botha St",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.859112,
+    "Longitude": 28.143323,
+    "Name": "C3 10 - Chris Hougard St & Koedoe St",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.860461,
+    "Longitude": 28.147264,
+    "Name": "C3 11 - Hendrik St & Willem Botha St",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.860302,
+    "Longitude": 28.157377,
+    "Name": "C3 12 - Willem Botha St & Smulders Mile",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.862266,
+    "Longitude": 28.164068,
+    "Name": "C3 13 - Hendrik Verwoerd Ave & Old Johannesburg Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.862304,
+    "Longitude": 28.167416,
+    "Name": "C3 14 - Hendrik Verwoerd Ave & Galway Ave",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.860196,
+    "Longitude": 28.176218,
+    "Name": "C3 15 - Hendrik Verwoerd Ave & Hippo Ave",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -25.856803,
+    "Longitude": 28.182926,
+    "Name": "C3 16 - Hendrik Verwoerd Ave & South St",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -25.846767,
+    "Longitude": 28.193675,
+    "Name": "C4 1 - At Ease, Jean Ave",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -25.84953,
+    "Longitude": 28.19738,
+    "Name": "C4 2 - Jean Ave & Lenchen St",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -25.858164,
+    "Longitude": 28.206288,
+    "Name": "C4 3 - 89 Jean Ave",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -25.863179,
+    "Longitude": 28.210343,
+    "Name": "C4 4 - Byles Bridge, Jean Ave",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -25.876185,
+    "Longitude": 28.199416,
+    "Name": "C4 5 - John Voster Dr & Logan Ave",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -25.878364,
+    "Longitude": 28.201409,
+    "Name": "C4 6 - John Voster Dr & Marco Polo St",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -25.885983,
+    "Longitude": 28.206926,
+    "Name": "C4 7 - John Voster Dr & Karee St",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -25.891103,
+    "Longitude": 28.210221,
+    "Name": "C4 8 - South Downs College, John Voster Dr",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -25.885079,
+    "Longitude": 28.206365,
+    "Name": "C4 9 - Love More Centre, John Voster Dr",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -25.876415,
+    "Longitude": 28.199208,
+    "Name": "C4 10 - John Voster & Logan Ave",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -25.873393,
+    "Longitude": 28.196566,
+    "Name": "C4 11 - Engen Garage, John Voster Dr",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -25.863302,
+    "Longitude": 28.210196,
+    "Name": "C4 12 - Byles Bridge, Jean Ave",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -25.858136,
+    "Longitude": 28.206102,
+    "Name": "C4 13 - 90 Jean Ave",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -25.849499,
+    "Longitude": 28.197187,
+    "Name": "C4 14 - Jean Ave & Lenchen Ave",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -25.84633,
+    "Longitude": 28.192786,
+    "Name": "C4 15 - Jean Ave & Gerhard St",
+    "StopNumber": 15
+  }
+]

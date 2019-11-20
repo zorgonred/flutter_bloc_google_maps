@@ -1,0 +1,278 @@
+[
+  {
+    "Latitude": -26.144612,
+    "Longitude": 28.064115,
+    "Name": "RB2 1 - SASCOC, Athol Oaklands (nearest cnr: 1st St)",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -26.134385,
+    "Longitude": 28.068374,
+    "Name": "RB2 2 - SASCOC, Athol Oaklands",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -26.132682,
+    "Longitude": 28.068971,
+    "Name": "RB2 3 - Melrose Blvd & Crescent Dr",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -26.131622,
+    "Longitude": 28.067629,
+    "Name": "RB2 4 - Whitely Rd & The High St",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.144981,
+    "Longitude": 28.064061,
+    "Name": "RB2 5 - Melrose Blvd & The High St",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.138446,
+    "Longitude": 28.045602,
+    "Name": "RB3 1 - Oxford Rd & Hume Rd",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.133795,
+    "Longitude": 28.046504,
+    "Name": "RB3 2 - Illovo Blvd, South Piazza (Fricker Rd)",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.128806,
+    "Longitude": 28.047642,
+    "Name": "RB3 3 - Illovo Blvd, North Piazza (Fricker Rd)",
+    "StopNumber": 30
+  },
+  {
+    "Latitude": -26.123765,
+    "Longitude": 28.046404,
+    "Name": "RB3 4 - 54 Melville Rd",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.120718,
+    "Longitude": 28.04654,
+    "Name": "RB3 5 - Summer Place, Melville Rd",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.124465,
+    "Longitude": 28.048583,
+    "Name": "RB3 6 - Oxford Rd & Boundary Rd",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.130391,
+    "Longitude": 28.0493,
+    "Name": "RB3 7 - Thrupps Center, Oxford Rd",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.131824,
+    "Longitude": 28.050499,
+    "Name": "RB3 8 - Chaplin Rd (nearest cnr: Atherstone Rd)",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.134983,
+    "Longitude": 28.052266,
+    "Name": "RB3 9 - Wanderers Protea Hotel, Rudd Rd",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -26.136152,
+    "Longitude": 28.050107,
+    "Name": "RB3 10 - North St & Atherstone Rd",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.136303,
+    "Longitude": 28.047425,
+    "Name": "RB3 11 - Oxford Rd & North St",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.138436,
+    "Longitude": 28.045947,
+    "Name": "RB3 12 - Oxford Rd & Hume Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -26.1462,
+    "Longitude": 28.040633,
+    "Name": "RB4 1 - 54 on Bath, Bath Ave",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.149133,
+    "Longitude": 28.036683,
+    "Name": "RB4 2 - Bolton Rd & Sussex Rd",
+    "StopNumber": 28
+  },
+  {
+    "Latitude": -26.145733,
+    "Longitude": 28.035683,
+    "Name": "RB4 3 - Jan Smuts Ave & 7th Ave",
+    "StopNumber": 37
+  },
+  {
+    "Latitude": -26.142076,
+    "Longitude": 28.035565,
+    "Name": "RB4 4 - Jan Smuts Ave & 8th Ave",
+    "StopNumber": 46
+  },
+  {
+    "Latitude": -26.134682,
+    "Longitude": 28.03507,
+    "Name": "RB4 5 - Jan Smuts Ave & Hume Rd",
+    "StopNumber": 55
+  },
+  {
+    "Latitude": -26.129485,
+    "Longitude": 28.03399,
+    "Name": "RB4 6 - Hyde Square, Jan Smuts Ave",
+    "StopNumber": 64
+  },
+  {
+    "Latitude": -26.125918,
+    "Longitude": 28.033811,
+    "Name": "RB4 7 - Hyde Park Shopping Center",
+    "StopNumber": 73
+  },
+  {
+    "Latitude": -26.122048,
+    "Longitude": 28.035644,
+    "Name": "RB4 8 - 75 6th Rd",
+    "StopNumber": 81
+  },
+  {
+    "Latitude": -26.117352,
+    "Longitude": 28.032258,
+    "Name": "RB4 9 - William Nicole Dr & 2nd Rd",
+    "StopNumber": 90
+  },
+  {
+    "Latitude": -26.124346,
+    "Longitude": 28.032322,
+    "Name": "RB4 10 - William Nicole Dr & Jan Smuts Ave",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.127802,
+    "Longitude": 28.033618,
+    "Name": "RB4 11 - Jan Smuts Ave & 6th Rd",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.132163,
+    "Longitude": 28.035693,
+    "Name": "RB4 12 - Jan Smuts Ave & Bompas Rd",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -26.14223,
+    "Longitude": 28.03579,
+    "Name": "RB4 13 - Jan Smuts Ave & 8th Ave",
+    "StopNumber": 13
+  },
+  {
+    "Latitude": -26.146183,
+    "Longitude": 28.035817,
+    "Name": "RB4 14 - Jan Smuts Ave & Tyrwhitt Ave",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -26.148633,
+    "Longitude": 28.036817,
+    "Name": "RB4 15 - 9 baker St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.144433,
+    "Longitude": 28.038367,
+    "Name": "RB4 16 - Crown Plaza, Sturdee Ave",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.152327,
+    "Longitude": 28.045525,
+    "Name": "RB5 1 - Oxford Rd & 11th Ave",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -26.155012,
+    "Longitude": 28.04612,
+    "Name": "RB5 2 - Oxford Rd & Worcester St",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -26.159944,
+    "Longitude": 28.047094,
+    "Name": "RB5 3 - Oxford Rd & 8th Ave",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -26.163486,
+    "Longitude": 28.050001,
+    "Name": "RB5 4 - Public Parking, Main Ave",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.167061,
+    "Longitude": 28.050159,
+    "Name": "RB5 5 - 3rd St & 4th Ave",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.167223,
+    "Longitude": 28.051951,
+    "Name": "RB5 6 - 39 3rd St (nearest cnr: 2nd Ave)",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.166383,
+    "Longitude": 28.05288,
+    "Name": "RB5 7 - Killarney Mall",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.16535,
+    "Longitude": 28.057058,
+    "Name": "RB5 8 - West St & Riviera Rd",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.161259,
+    "Longitude": 28.05834,
+    "Name": "RB5 9 - Central St (nearest cnr: 7th Ave)",
+    "StopNumber": 9
+  },
+  {
+    "Latitude": -26.158435,
+    "Longitude": 28.058425,
+    "Name": "RB5 10 - Central St (nearest cnr: 9th Ave)",
+    "StopNumber": 10
+  },
+  {
+    "Latitude": -26.155166,
+    "Longitude": 28.058517,
+    "Name": "RB5 11 - Central St (nearest cnr: 11th Ave)",
+    "StopNumber": 11
+  },
+  {
+    "Latitude": -26.151665,
+    "Longitude": 28.058574,
+    "Name": "RB5 12 - Central St (nearest cnr: 14th Ave)",
+    "StopNumber": 12
+  },
+  {
+    "Latitude": -26.148552,
+    "Longitude": 28.058525,
+    "Name": "RB5 13 - Nelson Mandela Foundation, Central St",
+    "StopNumber": 13
+  }
+]

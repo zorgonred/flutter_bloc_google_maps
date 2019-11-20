@@ -1,0 +1,305 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 10,
+      "fare_calculator_id": 7,
+      "address": "O.R. Tambo Int. Airport",
+      "name": "O.R. Tambo Int. Airport Station",
+      "longitude": 28.232055,
+      "latitude": -26.133492,
+      "short_name": "O.R. Tambo"
+    },
+    "day_type": {
+      "id": 0,
+      "name": "Saturdays and Public Holidays"
+    },
+    "transfer": true,
+    "instructions": "From Park Station to O.R. Tambo Int. Airport Station: Take the South-North line. Transfer at Sandton Station to the West-East line. Use only FRONT two coaches.",
+    "from_route": {
+      "id": 2,
+      "description": "South - North Commuter link",
+      "name": "Park to Hatfield",
+      "short_name": "South-North"
+    },
+    "from_station": {
+      "id": 11,
+      "fare_calculator_id": 10,
+      "address": "Wolmarans Street",
+      "name": "Park Station",
+      "longitude": 28.042581,
+      "latitude": -26.194769,
+      "short_name": "Park"
+    },
+    "entries": [
+      {
+        "transferDepartTime": "05:57",
+        "transferArriveTime": "05:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:30",
+        "toTime": "06:11"
+      },
+      {
+        "transferDepartTime": "06:27",
+        "transferArriveTime": "06:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:00",
+        "toTime": "06:41"
+      },
+      {
+        "transferDepartTime": "06:57",
+        "transferArriveTime": "06:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:30",
+        "toTime": "07:11"
+      },
+      {
+        "transferDepartTime": "07:27",
+        "transferArriveTime": "07:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:00",
+        "toTime": "07:41"
+      },
+      {
+        "transferDepartTime": "07:57",
+        "transferArriveTime": "07:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:30",
+        "toTime": "08:11"
+      },
+      {
+        "transferDepartTime": "08:27",
+        "transferArriveTime": "08:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:00",
+        "toTime": "08:41"
+      },
+      {
+        "transferDepartTime": "08:57",
+        "transferArriveTime": "08:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:30",
+        "toTime": "09:11"
+      },
+      {
+        "transferDepartTime": "09:27",
+        "transferArriveTime": "09:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:00",
+        "toTime": "09:41"
+      },
+      {
+        "transferDepartTime": "09:57",
+        "transferArriveTime": "09:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:30",
+        "toTime": "10:11"
+      },
+      {
+        "transferDepartTime": "10:27",
+        "transferArriveTime": "10:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:00",
+        "toTime": "10:41"
+      },
+      {
+        "transferDepartTime": "10:57",
+        "transferArriveTime": "10:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:30",
+        "toTime": "11:11"
+      },
+      {
+        "transferDepartTime": "11:27",
+        "transferArriveTime": "11:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:00",
+        "toTime": "11:41"
+      },
+      {
+        "transferDepartTime": "11:57",
+        "transferArriveTime": "11:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:30",
+        "toTime": "12:11"
+      },
+      {
+        "transferDepartTime": "12:27",
+        "transferArriveTime": "12:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:00",
+        "toTime": "12:41"
+      },
+      {
+        "transferDepartTime": "12:57",
+        "transferArriveTime": "12:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:30",
+        "toTime": "13:11"
+      },
+      {
+        "transferDepartTime": "13:27",
+        "transferArriveTime": "13:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:00",
+        "toTime": "13:41"
+      },
+      {
+        "transferDepartTime": "13:57",
+        "transferArriveTime": "13:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:30",
+        "toTime": "14:11"
+      },
+      {
+        "transferDepartTime": "14:27",
+        "transferArriveTime": "14:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:00",
+        "toTime": "14:41"
+      },
+      {
+        "transferDepartTime": "14:57",
+        "transferArriveTime": "14:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:30",
+        "toTime": "15:11"
+      },
+      {
+        "transferDepartTime": "15:27",
+        "transferArriveTime": "15:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:00",
+        "toTime": "15:41"
+      },
+      {
+        "transferDepartTime": "15:57",
+        "transferArriveTime": "15:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:30",
+        "toTime": "16:11"
+      },
+      {
+        "transferDepartTime": "16:27",
+        "transferArriveTime": "16:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:00",
+        "toTime": "16:41"
+      },
+      {
+        "transferDepartTime": "16:57",
+        "transferArriveTime": "16:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:30",
+        "toTime": "17:11"
+      },
+      {
+        "transferDepartTime": "17:27",
+        "transferArriveTime": "17:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:00",
+        "toTime": "17:41"
+      },
+      {
+        "transferDepartTime": "17:57",
+        "transferArriveTime": "17:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:30",
+        "toTime": "18:11"
+      },
+      {
+        "transferDepartTime": "18:27",
+        "transferArriveTime": "18:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:00",
+        "toTime": "18:41"
+      },
+      {
+        "transferDepartTime": "18:57",
+        "transferArriveTime": "18:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:30",
+        "toTime": "19:11"
+      },
+      {
+        "transferDepartTime": "19:27",
+        "transferArriveTime": "19:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:00",
+        "toTime": "19:41"
+      },
+      {
+        "transferDepartTime": "19:57",
+        "transferArriveTime": "19:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:30",
+        "toTime": "20:11"
+      },
+      {
+        "transferDepartTime": "20:28",
+        "transferArriveTime": "20:08",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:00",
+        "toTime": "20:42"
+      },
+      {
+        "transferDepartTime": "20:46",
+        "transferArriveTime": "20:38",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:30",
+        "toTime": "21:00"
+      }
+    ],
+    "transfer_station": {
+      "id": 6,
+      "fare_calculator_id": 8,
+      "address": "Rivonia Street and West Street",
+      "name": "Sandton Station",
+      "longitude": 28.057093,
+      "latitude": -26.108444,
+      "short_name": "Sandton"
+    },
+    "to_route": {
+      "id": 4,
+      "description": "West - East Commuter link",
+      "name": "Sandton to O.R Tambo",
+      "short_name": "West-East"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 1111,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

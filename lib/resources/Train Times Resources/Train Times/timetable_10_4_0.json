@@ -1,0 +1,317 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 4,
+      "fare_calculator_id": 4,
+      "address": "Old Pretoria Main Road (R101) and New Road/Grand Central Boulevard",
+      "name": "Midrand Station",
+      "longitude": 28.135615,
+      "latitude": -25.992427,
+      "short_name": "Midrand"
+    },
+    "day_type": {
+      "id": 0,
+      "name": "Saturdays and Public Holidays"
+    },
+    "transfer": true,
+    "instructions": "From O.R. Tambo Int. Airport Station to Midrand Station: Take the East-West line. Transfer at Marlboro Station to the South-North line.",
+    "from_route": {
+      "id": 3,
+      "description": "East - West Commuter link",
+      "name": "O.R. Tambo to Sandton",
+      "short_name": "East-West"
+    },
+    "from_station": {
+      "id": 10,
+      "fare_calculator_id": 7,
+      "address": "O.R. Tambo Int. Airport",
+      "name": "O.R. Tambo Int. Airport Station",
+      "longitude": 28.232055,
+      "latitude": -26.133492,
+      "short_name": "O.R. Tambo"
+    },
+    "entries": [
+      {
+        "fromCars": 4,
+        "fromTime": "05:06"
+      },
+      {
+        "transferDepartTime": "05:42",
+        "transferArriveTime": "05:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:27",
+        "toTime": "05:48"
+      },
+      {
+        "transferDepartTime": "06:12",
+        "transferArriveTime": "06:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:57",
+        "toTime": "06:18"
+      },
+      {
+        "transferDepartTime": "06:42",
+        "transferArriveTime": "06:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:27",
+        "toTime": "06:48"
+      },
+      {
+        "transferDepartTime": "07:12",
+        "transferArriveTime": "07:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:57",
+        "toTime": "07:18"
+      },
+      {
+        "transferDepartTime": "07:42",
+        "transferArriveTime": "07:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:27",
+        "toTime": "07:48"
+      },
+      {
+        "transferDepartTime": "08:12",
+        "transferArriveTime": "08:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:57",
+        "toTime": "08:18"
+      },
+      {
+        "transferDepartTime": "08:42",
+        "transferArriveTime": "08:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:27",
+        "toTime": "08:48"
+      },
+      {
+        "transferDepartTime": "09:12",
+        "transferArriveTime": "09:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:57",
+        "toTime": "09:18"
+      },
+      {
+        "transferDepartTime": "09:42",
+        "transferArriveTime": "09:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:27",
+        "toTime": "09:48"
+      },
+      {
+        "transferDepartTime": "10:12",
+        "transferArriveTime": "10:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:57",
+        "toTime": "10:18"
+      },
+      {
+        "transferDepartTime": "10:42",
+        "transferArriveTime": "10:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:27",
+        "toTime": "10:48"
+      },
+      {
+        "transferDepartTime": "11:12",
+        "transferArriveTime": "11:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:57",
+        "toTime": "11:18"
+      },
+      {
+        "transferDepartTime": "11:42",
+        "transferArriveTime": "11:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:27",
+        "toTime": "11:48"
+      },
+      {
+        "transferDepartTime": "12:12",
+        "transferArriveTime": "12:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:57",
+        "toTime": "12:18"
+      },
+      {
+        "transferDepartTime": "12:42",
+        "transferArriveTime": "12:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:27",
+        "toTime": "12:48"
+      },
+      {
+        "transferDepartTime": "13:12",
+        "transferArriveTime": "13:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:57",
+        "toTime": "13:18"
+      },
+      {
+        "transferDepartTime": "13:42",
+        "transferArriveTime": "13:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:27",
+        "toTime": "13:48"
+      },
+      {
+        "transferDepartTime": "14:12",
+        "transferArriveTime": "14:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:57",
+        "toTime": "14:18"
+      },
+      {
+        "transferDepartTime": "14:42",
+        "transferArriveTime": "14:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:27",
+        "toTime": "14:48"
+      },
+      {
+        "transferDepartTime": "15:12",
+        "transferArriveTime": "15:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:57",
+        "toTime": "15:18"
+      },
+      {
+        "transferDepartTime": "15:42",
+        "transferArriveTime": "15:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:27",
+        "toTime": "15:48"
+      },
+      {
+        "transferDepartTime": "16:12",
+        "transferArriveTime": "16:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:57",
+        "toTime": "16:18"
+      },
+      {
+        "transferDepartTime": "16:42",
+        "transferArriveTime": "16:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:27",
+        "toTime": "16:48"
+      },
+      {
+        "transferDepartTime": "17:12",
+        "transferArriveTime": "17:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:57",
+        "toTime": "17:18"
+      },
+      {
+        "transferDepartTime": "17:42",
+        "transferArriveTime": "17:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:27",
+        "toTime": "17:48"
+      },
+      {
+        "transferDepartTime": "18:12",
+        "transferArriveTime": "18:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:57",
+        "toTime": "18:18"
+      },
+      {
+        "transferDepartTime": "18:42",
+        "transferArriveTime": "18:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:27",
+        "toTime": "18:48"
+      },
+      {
+        "transferDepartTime": "19:12",
+        "transferArriveTime": "19:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:57",
+        "toTime": "19:18"
+      },
+      {
+        "transferDepartTime": "19:42",
+        "transferArriveTime": "19:36",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:27",
+        "toTime": "19:48"
+      },
+      {
+        "transferDepartTime": "20:12",
+        "transferArriveTime": "20:06",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:57",
+        "toTime": "20:18"
+      },
+      {
+        "transferDepartTime": "20:42",
+        "transferArriveTime": "20:37",
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:28",
+        "toTime": "20:48"
+      },
+      {
+        "fromCars": 4,
+        "fromTime": "20:46"
+      },
+      {
+        "fromCars": 4,
+        "fromTime": "21:04"
+      }
+    ],
+    "transfer_station": {
+      "id": 5,
+      "fare_calculator_id": 5,
+      "address": "Marlboro Drive",
+      "name": "Marlboro Station",
+      "longitude": 28.111108,
+      "latitude": -26.083504,
+      "short_name": "Marlboro"
+    },
+    "to_route": {
+      "id": 2,
+      "description": "South - North Commuter link",
+      "name": "Park to Hatfield",
+      "short_name": "South-North"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 1364,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

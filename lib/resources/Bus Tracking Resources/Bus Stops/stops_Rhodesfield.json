@@ -1,0 +1,212 @@
+[
+  {
+    "Latitude": -26.12516,
+    "Longitude": 28.231249,
+    "Name": "RF1 1 - Protea Hotel OR Tambo, Whirlwind St",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.121398,
+    "Longitude": 28.232405,
+    "Name": "RF1 2 - Premier Hotel OR Tambo, Gladiator St",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -26.115162,
+    "Longitude": 28.233281,
+    "Name": "RF1 3 - Gladiator St & Fury St",
+    "StopNumber": 32
+  },
+  {
+    "Latitude": -26.111025,
+    "Longitude": 28.234566,
+    "Name": "RF1 4 - Albatross St & Langenhoven St",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.107351,
+    "Longitude": 28.234087,
+    "Name": "RF1 5 - Arwyp Medical Centre ,Central Ave",
+    "StopNumber": 50
+  },
+  {
+    "Latitude": -26.104831,
+    "Longitude": 28.228415,
+    "Name": "RF1 6 - Voortrekker Rd & West St",
+    "StopNumber": 69
+  },
+  {
+    "Latitude": -26.10312,
+    "Longitude": 28.226358,
+    "Name": "RF1 7 - Kempton Place, Pretoria Rd",
+    "StopNumber": 78
+  },
+  {
+    "Latitude": -26.101011,
+    "Longitude": 28.227081,
+    "Name": "RF1 8 - Civic Centre, CR Swart Dr",
+    "StopNumber": 87
+  },
+  {
+    "Latitude": -26.101081,
+    "Longitude": 28.232945,
+    "Name": "RF1 9 - Erikson Mall, Monument Rd",
+    "StopNumber": 96
+  },
+  {
+    "Latitude": -26.091884,
+    "Longitude": 28.236442,
+    "Name": "RF1 10 - Monument Rd & Bessie St",
+    "StopNumber": 105
+  },
+  {
+    "Latitude": -26.083529,
+    "Longitude": 28.24146,
+    "Name": "RF1 11 - Cavendish Glen, Monument Rd",
+    "StopNumber": 114
+  },
+  {
+    "Latitude": -26.0792,
+    "Longitude": 28.248197,
+    "Name": "RF1 12 - Dann Rd & Monument Rd",
+    "StopNumber": 122
+  },
+  {
+    "Latitude": -26.086687,
+    "Longitude": 28.252222,
+    "Name": "RF1 13 - Glen Balad Mall, Weinberg St",
+    "StopNumber": 138
+  },
+  {
+    "Latitude": -26.076686,
+    "Longitude": 28.255435,
+    "Name": "RF1 14 - Anemoon Rd & Monument Rd",
+    "StopNumber": 14
+  },
+  {
+    "Latitude": -26.078689,
+    "Longitude": 28.248715,
+    "Name": "RF1 15 - Monument Rd & Dann Rd",
+    "StopNumber": 15
+  },
+  {
+    "Latitude": -26.083634,
+    "Longitude": 28.241481,
+    "Name": "RF1 16 - Cavendish Glen, Monument Rd",
+    "StopNumber": 16
+  },
+  {
+    "Latitude": -26.091981,
+    "Longitude": 28.236512,
+    "Name": "RF1 17 - Monument Rd & Bessie St",
+    "StopNumber": 17
+  },
+  {
+    "Latitude": -26.101006,
+    "Longitude": 28.233117,
+    "Name": "RF1 18 - Erikson Mall, Monument Rd",
+    "StopNumber": 18
+  },
+  {
+    "Latitude": -26.10213,
+    "Longitude": 28.230486,
+    "Name": "RF1 19 - The Food Court, CR Swart Rd",
+    "StopNumber": 19
+  },
+  {
+    "Latitude": -26.101219,
+    "Longitude": 28.227399,
+    "Name": "RF1 20 - Civic Centre, CR Swart Dr",
+    "StopNumber": 20
+  },
+  {
+    "Latitude": -26.103753,
+    "Longitude": 28.227843,
+    "Name": "RF1 21 - Long St & End St",
+    "StopNumber": 21
+  },
+  {
+    "Latitude": -26.107293,
+    "Longitude": 28.234447,
+    "Name": "RF1 22 - Arwyp Medical Centre, Central Ave",
+    "StopNumber": 22
+  },
+  {
+    "Latitude": -26.110791,
+    "Longitude": 28.235337,
+    "Name": "RF1 23 - Albatross St & Langenhoven St",
+    "StopNumber": 23
+  },
+  {
+    "Latitude": -26.116306,
+    "Longitude": 28.233472,
+    "Name": "RF1 24 - Gladiator St & Harvard St",
+    "StopNumber": 24
+  },
+  {
+    "Latitude": -26.121945,
+    "Longitude": 28.232545,
+    "Name": "RF1 25 - Premier Hotel OR Tambo, Gladiator St",
+    "StopNumber": 25
+  },
+  {
+    "Latitude": -26.125011,
+    "Longitude": 28.232165,
+    "Name": "RF1 26 - Protea Hotel OR Tambo, Whirlwind St",
+    "StopNumber": 26
+  },
+  {
+    "Latitude": -26.134654,
+    "Longitude": 28.22648,
+    "Name": "RF2 1 - InterContinental Hotel, OR Tambo",
+    "StopNumber": 1
+  },
+  {
+    "Latitude": -26.136143,
+    "Longitude": 28.226253,
+    "Name": "RF2 2 - SAA Airways Park 1",
+    "StopNumber": 2
+  },
+  {
+    "Latitude": -26.136334,
+    "Longitude": 28.224731,
+    "Name": "RF2 3 - SAA Airways Park 2",
+    "StopNumber": 3
+  },
+  {
+    "Latitude": -26.143379,
+    "Longitude": 28.223535,
+    "Name": "RF2 4 - Airways Park Technical",
+    "StopNumber": 4
+  },
+  {
+    "Latitude": -26.14808,
+    "Longitude": 28.22061,
+    "Name": "RF2 5 - Emperors Palace stop 1",
+    "StopNumber": 5
+  },
+  {
+    "Latitude": -26.144761,
+    "Longitude": 28.221699,
+    "Name": "RF2 6 - Emperors Palace stop 2",
+    "StopNumber": 6
+  },
+  {
+    "Latitude": -26.143267,
+    "Longitude": 28.223318,
+    "Name": "RF2 7 - Airways Park Technical",
+    "StopNumber": 7
+  },
+  {
+    "Latitude": -26.136253,
+    "Longitude": 28.224854,
+    "Name": "RF2 8 - SAA Airways Park",
+    "StopNumber": 8
+  },
+  {
+    "Latitude": -26.135184,
+    "Longitude": 28.226291,
+    "Name": "RF2 9 - InterContinental Hotel, OR Tambo",
+    "StopNumber": 9
+  }
+]

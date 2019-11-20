@@ -1,0 +1,462 @@
+{
+  "StatusCode": 0,
+  "HostAddr": "000.00.000.00",
+  "Result": {
+    "to_station": {
+      "id": 9,
+      "fare_calculator_id": 6,
+      "address": "Anson Street and Ventura Street",
+      "name": "Rhodesfield Station",
+      "longitude": 28.226234,
+      "latitude": -26.12815,
+      "short_name": "Rhodesfield"
+    },
+    "day_type": {
+      "id": 3,
+      "name": "Mondays"
+    },
+    "transfer": false,
+    "instructions": "From Marlboro Station to Rhodesfield Station: Take the West-East line. Use only REAR two coaches.",
+    "from_route": {
+      "id": 4,
+      "description": "West - East Commuter link",
+      "name": "Sandton to O.R Tambo",
+      "short_name": "West-East"
+    },
+    "from_station": {
+      "id": 5,
+      "fare_calculator_id": 5,
+      "address": "Marlboro Drive",
+      "name": "Marlboro Station",
+      "longitude": 28.111108,
+      "latitude": -26.083504,
+      "short_name": "Marlboro"
+    },
+    "entries": [
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:26",
+        "toTime": "05:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:46",
+        "toTime": "05:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "05:56",
+        "toTime": "06:04"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:06",
+        "toTime": "06:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:16",
+        "toTime": "06:24"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:26",
+        "toTime": "06:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:36",
+        "toTime": "06:44"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:46",
+        "toTime": "06:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "06:56",
+        "toTime": "07:04"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:06",
+        "toTime": "07:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:16",
+        "toTime": "07:24"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:26",
+        "toTime": "07:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:36",
+        "toTime": "07:44"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:46",
+        "toTime": "07:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "07:56",
+        "toTime": "08:04"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:06",
+        "toTime": "08:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:16",
+        "toTime": "08:24"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:26",
+        "toTime": "08:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:36",
+        "toTime": "08:44"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:46",
+        "toTime": "08:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "08:56",
+        "toTime": "09:04"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:06",
+        "toTime": "09:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:16",
+        "toTime": "09:24"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:26",
+        "toTime": "09:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:36",
+        "toTime": "09:44"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:46",
+        "toTime": "09:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "09:56",
+        "toTime": "10:04"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:06",
+        "toTime": "10:14"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:16",
+        "toTime": "10:24"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:26",
+        "toTime": "10:34"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "10:46",
+        "toTime": "10:54"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:02",
+        "toTime": "11:10"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:22",
+        "toTime": "11:30"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "11:42",
+        "toTime": "11:50"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:02",
+        "toTime": "12:10"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:22",
+        "toTime": "12:30"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "12:42",
+        "toTime": "12:50"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:02",
+        "toTime": "13:10"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:22",
+        "toTime": "13:30"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "13:42",
+        "toTime": "13:50"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:02",
+        "toTime": "14:10"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:22",
+        "toTime": "14:30"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "14:42",
+        "toTime": "14:50"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:02",
+        "toTime": "15:10"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:22",
+        "toTime": "15:30"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:34",
+        "toTime": "15:42"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:44",
+        "toTime": "15:52"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "15:54",
+        "toTime": "16:02"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:04",
+        "toTime": "16:12"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:14",
+        "toTime": "16:22"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:24",
+        "toTime": "16:32"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:34",
+        "toTime": "16:42"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:44",
+        "toTime": "16:52"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "16:54",
+        "toTime": "17:02"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:04",
+        "toTime": "17:12"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:14",
+        "toTime": "17:22"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:24",
+        "toTime": "17:32"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:34",
+        "toTime": "17:42"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:44",
+        "toTime": "17:52"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "17:54",
+        "toTime": "18:02"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:04",
+        "toTime": "18:12"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:14",
+        "toTime": "18:22"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:34",
+        "toTime": "18:42"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "18:54",
+        "toTime": "19:02"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:14",
+        "toTime": "19:22"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:34",
+        "toTime": "19:42"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "19:54",
+        "toTime": "20:02"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:14",
+        "toTime": "20:22"
+      },
+      {
+        "toCars": 4,
+        "fromCars": 4,
+        "fromTime": "20:32",
+        "toTime": "20:40"
+      }
+    ],
+    "to_route": {
+      "id": 4,
+      "description": "West - East Commuter link",
+      "name": "Sandton to O.R Tambo",
+      "short_name": "West-East"
+    }
+  },
+  "Host": "000.0.0.0",
+  "ResponseTime": 2848,
+  "Timestamp": "Tue May 28 11:17:00 SAST 2013",
+  "HostName": "brandfusion.afrigisforms.co.za"
+}

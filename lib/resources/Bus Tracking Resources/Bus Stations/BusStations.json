@@ -1,0 +1,58 @@
+[
+  {
+    "longitude": 28.236054,
+    "latitude": -25.748244,
+    "short_name": "Hatfield",
+    "code": "H",
+    "sort": 0
+  },
+  {
+    "longitude": 28.190963,
+    "latitude": -25.760197,
+    "short_name": "Pretoria",
+    "code": "P",
+    "sort": 1
+  },
+  {
+    "longitude": 28.190003,
+    "latitude": -25.852365,
+    "short_name": "Centurion",
+    "code": "C",
+    "sort": 2
+  },
+  {
+    "longitude": 28.135615,
+    "latitude": -25.992427,
+    "short_name": "Midrand",
+    "code": "M",
+    "sort": 3
+  },
+  {
+    "longitude": 28.057093,
+    "latitude": -26.108444,
+    "short_name": "Sandton",
+    "code": "S",
+    "sort": 4
+  },
+  {
+    "longitude": 28.044643,
+    "latitude": -26.148273,
+    "short_name": "Rosebank",
+    "code": "RB",
+    "sort": 5
+  },
+  {
+    "longitude": 28.042581,
+    "latitude": -26.194769,
+    "short_name": "Park",
+    "code": "J",
+    "sort": 6
+  },
+  {
+    "longitude": 28.226234,
+    "latitude": -26.12815,
+    "short_name": "Rhodesfield",
+    "code": "RF",
+    "sort": 7
+  }
+]
