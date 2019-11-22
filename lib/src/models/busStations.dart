@@ -1,17 +1,22 @@
-import 'package:json_annotation/json_annotation.dart';
 
-part 'busStations.g.dart';
-
-@JsonSerializable()
 class BusStations {
-    BusStations();
+
 
     num longitude;
     num latitude;
     String short_name;
     String code;
     num sort;
-    
-    factory BusStations.fromJson(Map<String,dynamic> json) => _$BusStationsFromJson(json);
-    Map<String, dynamic> toJson() => _$BusStationsToJson(this);
+
+    BusStations({this.longitude, this.latitude, this.short_name, this.code, this.sort});
+
+    factory BusStations.fromJson(Map<String, dynamic> json) {
+        return  BusStations(
+            longitude: json['longitude'] as num,
+            latitude: json['longitude'] as num,
+            short_name: json['short_name'] as String,
+            code: json['code'] as String,
+            sort: json['sort'] as num,
+        );
+    }
 }
