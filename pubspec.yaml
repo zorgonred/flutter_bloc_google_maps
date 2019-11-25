@@ -50,6 +50,22 @@ flutter:
   assets:
     - images/BusIcon.png
     - assets/BusStations.json
+    - assets/route/coords_Centurion.json
+    - assets/route/coords_Park.json
+    - assets/route/coords_Hatfield.json
+    - assets/route/coords_Midrand.json
+    - assets/route/coords_Pretoria.json
+    - assets/route/coords_Rhodesfield.json
+    - assets/route/coords_Rosebank.json
+    - assets/route/coords_Sandton.json
+    - assets/busStops/stops_Pretoria.json
+    - assets/busStops/stops_Park.json
+    - assets/busStops/stops_Sandton.json
+    - assets/busStops/stops_Rosebank.json
+    - assets/busStops/stops_Pretoria.json
+    - assets/busStops/stops_Hatfield.json
+    - assets/busStops/stops_Rhodesfield.json
+    - assets/busStops/stops_Centurion.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

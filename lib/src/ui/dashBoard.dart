@@ -3,8 +3,8 @@ import 'package:gtbuddy/services/services.dart';
 import 'package:gtbuddy/src/models/busStations.dart';
 import 'package:gtbuddy/src/resources/busStations_provider.dart';
 import 'package:gtbuddy/src/ui/allStationsMap.dart';
-import 'package:gtbuddy/src/ui/busStations.dart';
 import 'package:gtbuddy/src/ui/components/serviceArea.dart';
+import 'package:gtbuddy/src/ui/maptwo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -48,7 +48,6 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Color.fromRGBO(239, 239, 244, 1),
             ),
 
-//            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
             child: Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 30.0),
               child: Text(
@@ -56,67 +55,51 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.black54),
               ),
             ),
-//            color: Color.fromRGBO(239, 239, 244, 1),
           ),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => MapSample(
-                          selectedStation: "Hatfield",
-                        )),
-              );
-            },
-            child: Container(
-              height: 100,
-              child: FutureBuilder<List<String>>(
-                  future: SavedService().selectSavedStation(),
-                  builder: (context, snapshot) {
-                    if (!snapshot.hasData) {
-                      return Container();
-                    }
-//                    print(snapshot.data[index]);
-                    return ListView.builder(
-                      itemBuilder: (BuildContext context, int index) {
-                        print(snapshot.data[index]);
-                        return Padding(
+          Container(
+            height: 100,
+            child: FutureBuilder<List<String>>(
+                future: SavedService().selectSavedStation(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return Container();
+                  }
+                  return ListView.builder(
+                    itemBuilder: (BuildContext context, int index) {
+                      print(snapshot.data[index]);
+                      return Dismissible(
+
+                        key: Key(snapshot.data[index]),
+                        onDismissed: (direction){
+                          snapshot.data.removeAt(index);
+                          Scaffold.of(context).showSnackBar(new SnackBar(
+                              content: Text("Station Removed")));
+                        },
+                        background: Container(color: Colors.red,),
+                        child: Padding(
                           padding: const EdgeInsets.only(left: 8.0, top: 30.0),
                           child: GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => MapSample(
-                                      selectedStation: snapshot.data[index],
-                                    )),
+                                    builder: (context) => MapTWo(
+                                          selectStation: snapshot.data[index],
+                                        )),
                               );
+                              print(snapshot.data[index]);
                             },
-
-                            child: Text(
-                              snapshot.data[index],
+                              child: Text(
+                                snapshot.data[index],
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      itemCount: snapshot.data.length,
-                    );
-                  }),
-            ),
-//            child: Container(
-//              width: 400,
-//              height: 65,
-//              decoration: BoxDecoration(
-//
-//                border:
-//                Border(bottom: BorderSide(width: 0.5, color: Colors.grey)),
-//                color: Colors.white,
-//              ),
-////            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
-//              padding: const EdgeInsets.only(left: 8.0, top: 30.0),
-//              child: Text("Hatfield"),
-//
-//            ),
+                        ),
+
+                      );
+                    },
+                    itemCount: snapshot.data.length,
+                  );
+                }),
           ),
           Container(
             width: 400,
@@ -145,18 +128,22 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 //            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
             padding: const EdgeInsets.only(left: 8.0, top: 30.0),
-            child: Text("Pretoria"),
+            child: GestureDetector(
+                onTap: () {
+                  print("Pretoria");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MapTWo(
+                              selectStation: 'Pretoria',
+                            )),
+                  );
+                },
+                child: Text("Pretoria")),
           ),
           Container(
             width: 400,
             height: 55,
-//            decoration: BoxDecoration(
-//
-//              border:
-//              Border(top: BorderSide(width: 0.5, color: Colors.grey)),
-//              color: Color.fromRGBO(239, 239, 244, 1),
-//            ),
-//            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
             padding: const EdgeInsets.only(left: 8.0, top: 30.0),
             child: Text(
               "ALL STATIONS",
@@ -172,21 +159,22 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               color: Colors.white,
             ),
-
-//            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
-//            padding: const EdgeInsets.only(left: 8.0, top: 30.0),
             child: FlatButton(
               textColor: Colors.black54,
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MapSample()),
+                  MaterialPageRoute(
+                      builder: (context) => MapSample(
+                        selectedStation: 's'
+                      )),
                 );
               },
               child: Align(
                   alignment: Alignment.centerLeft,
-                  child:
-              Text("All Stations",)),
+                  child: Text(
+                    "All Stations",
+                  )),
             ),
           ),
           Container(
@@ -198,8 +186,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               color: Color.fromRGBO(239, 239, 244, 1),
             ),
-
-//            margin: const EdgeInsets.only(left: 100.0, right: 20.0),
             padding: const EdgeInsets.only(left: 8.0, top: 30.0),
           ),
         ],
