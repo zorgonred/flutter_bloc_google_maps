@@ -65,11 +65,11 @@ class MapSampleState extends State<MapSample> {
                 List<dynamic> coords = element["bs"];
 
                 coords.forEach((i) {
-                  double lat = double.tryParse(i["la"]);
-                  double lng = double.tryParse(i["lo"]);
+                  double lat = double.tryParse(i["latitude"]);
+                  double lng = double.tryParse(i["longitude"]);
 
                   allMarkersByPosition.add(Marker(
-                      markerId: MarkerId('location_${i["tts"]}'),
+                      markerId: MarkerId('location_${i["ID"]}'),
                       position: LatLng(lat ?? 0.0, lng ?? 0.0)));
                 }
 

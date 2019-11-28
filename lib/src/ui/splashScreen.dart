@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                     Image.asset('images/BusIcon.png'),
+                     Image.asset('assets/icons/spash_screen/BusIcon.png'),
 
                     ],
                   ),

@@ -25,7 +25,7 @@ class MyApppState extends State<MyAppp> {
             // Use future builder and DefaultAssetBundle to load the local JSON file
             child:  FutureBuilder(
                 future: DefaultAssetBundle.of(context)
-                    .loadString('assets/BusStations.json'),
+                    .loadString('assets/locations/BusStations.json'),
                 builder: (context, snapshot) {
                   List<BusStations> stations =
                       parseJosn(snapshot.data.toString());

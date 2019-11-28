@@ -4,11 +4,6 @@
     "colour": "FF8F8F",
     "coords": [
       {
-        "ID": "0",
-        "longitude": null,
-        "latitude": null
-      },
-      {
         "ID": "1",
         "longitude": "28.1908560",
         "latitude": "-25.851091"
@@ -937,11 +932,6 @@
         "ID": "186",
         "longitude": "28.1900651",
         "latitude": "-25.851631"
-      },
-      {
-        "ID": "187",
-        "longitude": null,
-        "latitude": null
       }
     ]
   },
@@ -949,11 +939,7 @@
     "name": "C2: Centurion-Rooihuiskraal",
     "colour": "FFC18F",
     "coords": [
-      {
-        "ID": "188",
-        "longitude": null,
-        "latitude": null
-      },
+
       {
         "ID": "189",
         "longitude": "28.190784",
@@ -1426,11 +1412,6 @@
     "colour": "77D5D5",
     "coords": [
       {
-        "ID": "282",
-        "longitude": null,
-        "latitude": null
-      },
-      {
         "ID": "283",
         "longitude": "28.190793",
         "latitude": "-25.851212"
@@ -1751,11 +1732,7 @@
     "name": "C4: Centurion-Southdowns",
     "colour": "83EA83",
     "coords": [
-      {
-        "ID": "346",
-        "longitude": null,
-        "latitude": null
-      },
+
       {
         "ID": "347",
         "longitude": "28.18996",

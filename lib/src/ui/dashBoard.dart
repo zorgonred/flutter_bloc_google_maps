@@ -47,7 +47,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   Border(bottom: BorderSide(width: 0.5, color: Colors.grey)),
               color: Color.fromRGBO(239, 239, 244, 1),
             ),
-
             child: Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 30.0),
               child: Text(
@@ -68,14 +67,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     itemBuilder: (BuildContext context, int index) {
                       print(snapshot.data[index]);
                       return Dismissible(
-
                         key: Key(snapshot.data[index]),
-                        onDismissed: (direction){
+                        onDismissed: (direction) {
                           snapshot.data.removeAt(index);
-                          Scaffold.of(context).showSnackBar(new SnackBar(
-                              content: Text("Station Removed")));
+                          Scaffold.of(context).showSnackBar(
+                              new SnackBar(content: Text("Station Removed")));
                         },
-                        background: Container(color: Colors.red,),
+                        background: Container(
+                          color: Colors.red,
+                          child: Text(
+                            "Delete",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 8.0, top: 30.0),
                           child: GestureDetector(
@@ -85,16 +89,23 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                     builder: (context) => MapTWo(
                                           selectStation: snapshot.data[index],
+                                          selectCoords: snapshot.data[index],
                                         )),
                               );
                               print(snapshot.data[index]);
                             },
-                              child: Text(
-                                snapshot.data[index],
-                              ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  snapshot.data[index],
+                                ),
+                                Divider()
+                              ],
                             ),
+                          ),
                         ),
-
                       );
                     },
                     itemCount: snapshot.data.length,
@@ -136,6 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     MaterialPageRoute(
                         builder: (context) => MapTWo(
                               selectStation: 'Pretoria',
+                              selectCoords: 'Pretoria',
                             )),
                   );
                 },
@@ -165,9 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => MapSample(
-                        selectedStation: 's'
-                      )),
+                      builder: (context) => MapTWo(selectStation: 'All')),
                 );
               },
               child: Align(

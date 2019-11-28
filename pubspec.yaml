@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  rxdart: ^0.18.0
+  rxdart: ^0.22.5
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -29,6 +29,11 @@ dependencies:
   json_serializable: ^2.0.0
   google_maps_flutter: ^0.5.21+8
   shared_preferences: ^0.5.4+5
+  permission_handler: ^3.0.1
+  http: ^0.12.0+2
+  flutter_bloc: ^2.0.0
+  meta: ^1.1.6
+  equatable: ^0.6.0
 
 dev_dependencies:
   flutter_test:
@@ -48,24 +53,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/BusIcon.png
-    - assets/BusStations.json
-    - assets/route/coords_Centurion.json
-    - assets/route/coords_Park.json
-    - assets/route/coords_Hatfield.json
-    - assets/route/coords_Midrand.json
-    - assets/route/coords_Pretoria.json
-    - assets/route/coords_Rhodesfield.json
-    - assets/route/coords_Rosebank.json
-    - assets/route/coords_Sandton.json
-    - assets/busStops/stops_Pretoria.json
-    - assets/busStops/stops_Park.json
-    - assets/busStops/stops_Sandton.json
-    - assets/busStops/stops_Rosebank.json
-    - assets/busStops/stops_Pretoria.json
-    - assets/busStops/stops_Hatfield.json
-    - assets/busStops/stops_Rhodesfield.json
-    - assets/busStops/stops_Centurion.json
+    - assets/routes_refactored/
+    - assets/icons/splash_screen/BusIcon.png
+    - assets/locations/BusStations.json
+    - assets/routes_refactored/coords_Centurion.json
+    - assets/routes_refactored/coords_Park.json
+    - assets/routes_refactored/coords_Hatfield.json
+    - assets/routes_refactored/coords_Midrand.json
+    - assets/routes_refactored/coords_Pretoria.json
+    - assets/routes_refactored/coords_Rhodesfield.json
+    - assets/routes_refactored/coords_Rosebank.json
+    - assets/routes_refactored/coords_Sandton.json
+    - assets/bus_stops/stops_Pretoria.json
+    - assets/bus_stops/stops_Park.json
+    - assets/bus_stops/stops_Sandton.json
+    - assets/bus_stops/stops_Rosebank.json
+    - assets/bus_stops/stops_Pretoria.json
+    - assets/bus_stops/stops_Hatfield.json
+    - assets/bus_stops/stops_Rhodesfield.json
+    - assets/bus_stops/stops_Centurion.json
+    - assets/bus_stops/stops_All.json
+    - assets/icons/bus_stop/bus_stop@2x.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
