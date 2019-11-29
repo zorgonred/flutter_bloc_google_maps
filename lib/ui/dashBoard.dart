@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:gtbuddy/services/services.dart';
-import 'package:gtbuddy/src/models/busStations.dart';
-import 'package:gtbuddy/src/resources/busStations_provider.dart';
-import 'package:gtbuddy/src/ui/allStationsMap.dart';
-import 'package:gtbuddy/src/ui/components/serviceArea.dart';
-import 'package:gtbuddy/src/ui/maptwo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'locations_list.dart';
+import 'maptwo.dart';
 
 class HomeScreen extends StatefulWidget {
   final String selectedFromList;
@@ -30,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MyAppp()),
+                MaterialPageRoute(builder: (context) => LocationList()),
               );
             },
             child: Icon(Icons.add),
@@ -70,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         key: Key(snapshot.data[index]),
                         onDismissed: (direction) {
                           snapshot.data.removeAt(index);
+                          SavedService().deleteFromDashboard(index);
                           Scaffold.of(context).showSnackBar(
                               new SnackBar(content: Text("Station Removed")));
                         },

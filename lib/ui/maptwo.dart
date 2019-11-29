@@ -4,9 +4,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:gtbuddy/src/models/routes.dart';
-import 'package:gtbuddy/src/ui/components/serviceArea.dart';
 import 'package:http/http.dart' as http;
+
 
 class MapTWo extends StatefulWidget {
   final String selectStation;
@@ -105,12 +104,12 @@ class _MapTWoState extends State<MapTWo> {
         actions: <Widget>[
           FlatButton(
             textColor: Colors.white,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => busStationList()),
-              );
-            },
+//            onPressed: () {
+//              Navigator.push(
+//                context,
+//                MaterialPageRoute(builder: (context) => busStationList()),
+//              );
+//            },
             child: Icon(Icons.add),
           ),
         ],
@@ -217,7 +216,7 @@ class _MapTWoState extends State<MapTWo> {
 
               return GoogleMap(
                 initialCameraPosition: CameraPosition(
-                    target: LatLng(-26.1711459, 27.9002758), zoom: 2.0),
+                    target: LatLng(-26.1711459, 27.9002758), zoom: 10.0),
                 markers: Set.from(allMarkers),
                 onMapCreated: mapCreated,
                 polylines: allPolylinesByPosition,

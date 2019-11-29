@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gtbuddy/src/app.dart';
+import 'package:gtbuddy/app.dart';
 
 
 void main() {
