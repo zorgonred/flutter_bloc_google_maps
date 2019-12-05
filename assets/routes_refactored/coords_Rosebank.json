@@ -4,11 +4,6 @@
     "colour": "83EA83",
     "coords": [
       {
-        "ID": "2110",
-        "longitude": null,
-        "latitude": null
-      },
-      {
         "ID": "2111",
         "longitude": "28.2253099",
         "latitude": "-26.126649"
@@ -553,11 +548,7 @@
         "longitude": "28.2254537",
         "latitude": "-26.128021"
       },
-      {
-        "ID": "2220",
-        "longitude": null,
-        "latitude": null
-      }
+
     ]
   }
 ]

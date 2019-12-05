@@ -34,7 +34,15 @@ dependencies:
   flutter_bloc: ^2.0.0
   meta: ^1.1.6
   equatable: ^0.6.0
-  bloc_pattern: ^2.5.1
+  bloc_pattern: ^2.3.2
+  rflutter_alert: ^1.0.2
+  font_awesome_flutter: ^8.5.0
+  geolocator: ^5.1.5
+  geocoder: ^0.2.1
+
+
+#  geolocator: ^5.0.0
+#  location: ^2.3.1
 
 dev_dependencies:
   flutter_test:
@@ -65,8 +73,19 @@ flutter:
     - assets/routes_refactored/coords_Rhodesfield.json
     - assets/routes_refactored/coords_Rosebank.json
     - assets/routes_refactored/coords_Sandton.json
+    - assets/routes_strings/
+    - assets/routes_strings/coords_Centurion.json
+    - assets/routes_strings/coords_Park.json
+    - assets/routes_strings/coords_Hatfield.json
+    - assets/routes_strings/coords_Midrand.json
+    - assets/routes_strings/coords_Pretoria.json
+    - assets/routes_strings/coords_Rhodesfield.json
+    - assets/routes_strings/coords_Rosebank.json
+    - assets/routes_strings/coords_Sandton.json
+    - assets/bus_stops/AllBusStops.json
     - assets/bus_stops/stops_Pretoria.json
     - assets/bus_stops/stops_Park.json
+    - assets/bus_stops/stops_Midrand.json
     - assets/bus_stops/stops_Sandton.json
     - assets/bus_stops/stops_Rosebank.json
     - assets/bus_stops/stops_Pretoria.json
@@ -75,6 +94,7 @@ flutter:
     - assets/bus_stops/stops_Centurion.json
     - assets/bus_stops/stops_All.json
     - assets/icons/bus_stop/bus_stop@2x.png
+    - assets/icons/live_bus/bus_position@2x.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -87,10 +107,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+  - family: BeVietnam
+    fonts:
+      - asset: fonts/RedHatDisplay-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -1,15 +1,22 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:gtbuddy/blocs/dashboard/dashboard_bloc.dart';
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:bloc_pattern/bloc_pattern.dart';
+
 
 class SavedService {
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
+
+
   Future addtoList(String station) async {
+
     final SharedPreferences prefs = await _prefs;
     var list = await selectSavedStation();
+
     if (list != null && list.length > 0) {
       print("length of list" + list.length.toString());
       var existsStation = list.any((x) => x == station.trim());
@@ -17,11 +24,15 @@ class SavedService {
       if (!existsStation) {
         list.add(station);
         prefs.setStringList('savedStations', list);
+        print('added item');
+
       }
     } else {
       var x = List<String>();
       x.add(station);
       prefs.setStringList('savedStations', x);
+      print('added first item');
+
     }
   }
 
@@ -42,5 +53,9 @@ class SavedService {
     var list = await selectSavedStation();
     list.removeAt(index);
     prefs.setStringList('savedStations', list);
+
   }
+
+
+
 }

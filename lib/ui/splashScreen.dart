@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:gtbuddy/utils/colour_pallete.dart';
 import 'dashBoard.dart';
 
 
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Color.fromRGBO(59, 62, 64, 1)),
+            decoration: BoxDecoration(color: Pallete.appBarColor),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
