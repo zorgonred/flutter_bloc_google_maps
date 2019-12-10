@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:gtbuddy/utils/colour_pallete.dart';
 import 'package:gtbuddy/utils/text_style.dart';
-
+import 'package:flutter/material.dart';
 
 class DashboardResultTile extends StatelessWidget {
   String text;
@@ -12,12 +11,12 @@ class DashboardResultTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400,
-      height: 60,
+      height: 40,
+      alignment: Alignment.centerLeft,
       decoration: BoxDecoration(
         color: Pallete.BarColor,
       ),
-      padding: const EdgeInsets.only(left: 8.0, top: 30.0),
+      padding: const EdgeInsets.only(left: 20),
       child: GestureDetector(
           onTap: () {
             Navigator.of(context).push(new MaterialPageRoute<Null>(

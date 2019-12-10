@@ -1,8 +1,7 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
 import 'package:gtbuddy/utils/colour_pallete.dart';
-import 'dashBoard.dart';
-
+import 'package:flutter/material.dart';
+import 'dashboard.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -10,23 +9,20 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   void initState() {
     super.initState();
-
-    loadData();
+    _loadData();
   }
 
-  Future<Timer> loadData() async {
-    return new Timer(Duration(seconds: 5), onDoneLoading);
+  Future<Timer> _loadData() async {
+    return new Timer(Duration(seconds: 5), _onDoneLoading);
   }
 
-  onDoneLoading() async {
-    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
+  _onDoneLoading() async {
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -45,13 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                     Image.asset('assets/icons/splash_screen/BusIcon.png'),
-
+                      Image.asset('assets/icons/splash_screen/BusIcon.png'),
                     ],
                   ),
                 ),
               ),
-
             ],
           )
         ],

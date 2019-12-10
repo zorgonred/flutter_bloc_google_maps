@@ -1,15 +1,17 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
+import 'package:gtbuddy/blocs/location_bloc.dart';
+import 'package:gtbuddy/blocs/station_bloc.dart';
+import 'package:gtbuddy/ui/dashboard.dart';
+import 'package:gtbuddy/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:gtbuddy/ui/dashBoard.dart';
-import 'package:gtbuddy/ui/splashScreen.dart';
 
 class GtBuddyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       blocs: [
-        //add blocks
-//        Bloc((c) => DashboardBloc())
+        Bloc((c) => LocationBloc()),
+        Bloc((c) => StationBloc())
       ],
       child: MaterialApp(
         title: 'GTBuddy',
