@@ -3,12 +3,10 @@ import 'package:geolocator/geolocator.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 
-
 class ClosestStation {
 
-
   Future<Map<String, dynamic>> closestLocation() async {
-    Position position = await Geolocator()
+    Position currentPosition = await Geolocator()
         .getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
 
     String busStationsJson =
@@ -24,8 +22,8 @@ class ClosestStation {
     while (busStations.length > 0) {
       if (nearest == null) {
         nearest = await Geolocator().distanceBetween(
-          position.latitude,
-          position.longitude,
+          currentPosition.latitude,
+          currentPosition.longitude,
           busStations[busStations.length - 1]['latitude'],
           busStations[busStations.length - 1]['longitude'],
         );
@@ -33,8 +31,8 @@ class ClosestStation {
         busStations.removeLast();
       } else {
         var checkClosest = await Geolocator().distanceBetween(
-          position.latitude,
-          position.longitude,
+          currentPosition.latitude,
+          currentPosition.longitude,
           busStations[busStations.length - 1]['latitude'],
           busStations[busStations.length - 1]['longitude'],
         );

@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
-
-
+import 'package:flutter/cupertino.dart';
 
 abstract class DashboardSavedState extends Equatable {
   const DashboardSavedState();
@@ -13,23 +12,20 @@ class Initial extends DashboardSavedState {}
 
 class SavedLoading extends DashboardSavedState {}
 
-
 class Add extends DashboardSavedState {
   final String select;
 
   Add({this.select});
 }
 
-
-
 class SavedLoaded extends DashboardSavedState {
-  final List<String> savedstationss;
+  final List<String> savedStationss;
   final Map<String, dynamic> closest;
-  SavedLoaded({this.savedstationss, this.closest});
+
+  SavedLoaded({@required this.savedStationss, @required this.closest});
 
   @override
-  // TODO: implement props
-  List<Object> get props => [savedstationss];
+  List<Object> get props => [savedStationss, closest];
 }
 
 class SavedNotLoaded extends DashboardSavedState {}

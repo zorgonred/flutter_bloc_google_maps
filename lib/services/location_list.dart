@@ -2,27 +2,16 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:gtbuddy/models/locations.dart';
 
-
 class LocationList {
-  List<Locations> mystations;
 
-  fetchLocations() async {
-    print('Came to fetch locations');
-    String jsonString =
-    await rootBundle.loadString('assets/locations/BusStations.json');
-    print('fetched jsonString');
+  Future<List<Locations>> fetchLocations() async {
+    String fetchLocations =
+        await rootBundle.loadString('assets/locations/BusStations.json');
 
-    List<dynamic> parsedJson = jsonDecode(jsonString);
-    print('json Decoded');
+    List<dynamic> parsedJson = jsonDecode(fetchLocations);
 
-    mystations = parsedJson.map((jsonobject) {
-      return Locations.fromJson(jsonobject);
+    return parsedJson.map((jsonObject) {
+      return Locations.fromJson(jsonObject);
     }).toList();
-
-    mystations.forEach((f) {
-      print(f.shortName);
-    });
-
-    return mystations;
   }
 }

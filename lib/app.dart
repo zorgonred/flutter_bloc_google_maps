@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gtbuddy/ui/dashBoard.dart';
 import 'package:gtbuddy/ui/splash_screen.dart';
 import 'blocs/dashboard/dashboard_bloc.dart';
-import 'blocs/location_list/locationlist_bloc.dart';
+import 'blocs/location_list/location_list_bloc.dart';
 
 
 class GtBuddyApp extends StatelessWidget {
@@ -11,9 +11,9 @@ class GtBuddyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<LocationlistBloc>(
+        BlocProvider<LocationListBloc>(
           create: (BuildContext context) {
-            return LocationlistBloc();
+            return LocationListBloc();
           },
         ),
         BlocProvider<DashboardSavedBloc>(

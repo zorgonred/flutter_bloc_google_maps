@@ -10,27 +10,24 @@ class DashboardSavedBloc
   @override
   DashboardSavedState get initialState => SavedLoading();
 
-  List<String> mysavedstations;
-  String selectedd;
-  Map<String, dynamic> closest;
-
   @override
   Stream<DashboardSavedState> mapEventToState(
     DashboardSavedEvent event,
   ) async* {
     final currentState = state;
-    // TODO: Add Logic
+
     if (event is LoadSaved) {
       print('Event came');
 
-      mysavedstations = await SavedService().selectSavedStation();
-      closest = await ClosestStation().closestLocation();
-      yield SavedLoaded(savedstationss: mysavedstations, closest: closest);
+      var mySavedStations = await SavedService().selectSavedStation();
+      var closest = await ClosestStation().closestLocation();
+
+      yield SavedLoaded(savedStationss: mySavedStations, closest: closest);
     } else if (event is AddSaved) {
       print('Event saved');
 
-      selectedd = await SavedService().addtoList(event.selected);
-      yield Add(select: selectedd);
+      var selected = await SavedService().addtoList(event.selected);
+      yield Add(select: selected);
     }
   }
 }

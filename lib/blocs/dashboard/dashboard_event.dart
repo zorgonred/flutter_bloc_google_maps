@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 import 'package:gtbuddy/models/locations.dart';
 import 'package:meta/meta.dart';
 
-
 abstract class DashboardSavedEvent extends Equatable {
   const DashboardSavedEvent();
 
@@ -19,11 +18,7 @@ class AddSaved extends DashboardSavedEvent {
 
   @override
   List<Object> get props => [selected];
-
-
 }
-
-
 
 class DeleteSaved extends DashboardSavedEvent {
   final Locations saved;
@@ -36,5 +31,3 @@ class DeleteSaved extends DashboardSavedEvent {
   @override
   String toString() => 'DeleteSaved { saved: $saved }';
 }
-
-

@@ -9,8 +9,9 @@ import 'package:gtbuddy/ui/tiles/dashboard_result_tile.dart';
 import 'package:gtbuddy/ui/tiles/loading.dart';
 import 'package:gtbuddy/utils/colour_pallete.dart';
 import 'package:gtbuddy/utils/text_style.dart';
-import 'locations_list.dart';
 
+import 'locations_list.dart';
+import 'map.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -33,7 +34,7 @@ class HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => LocationList()),
+                MaterialPageRoute(builder: (context) => LocList()),
               );
             },
             child: Icon(Icons.add),
@@ -76,7 +77,7 @@ class SavedState extends State<Saved> {
             return CustomLoading();
           } else if (state is SavedLoaded) {
             print('loaded');
-            return ListBuilder(state.savedstationss, state.closest);
+            return ListBuilder(state.savedStationss, state.closest);
           } else if (state is SavedNotLoaded) {
             print('Problem');
             return CustomLoading();
@@ -117,10 +118,9 @@ class ListBuilder extends StatelessWidget {
                     key: Key(_savedStations[index]),
                     onDismissed: (direction) {
                       _savedStations.removeAt(index);
-                      SavedService().deleteFromDashboard(index);
+                      SavedService().deleteSavedStation(index);
                       Scaffold.of(context).showSnackBar(
                           new SnackBar(content: Text("Station Removed")));
-
                     },
                     background: Container(
                       alignment: AlignmentDirectional.centerEnd,
@@ -130,23 +130,43 @@ class ListBuilder extends StatelessWidget {
                         color: Pallete.White,
                       ),
                     ),
-                    child: GestureDetector(
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              padding: EdgeInsets.only(left: 12),
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                _savedStations[index],
-                                style: AppStyles.Results(),
-                              ),
+                    child: FutureBuilder(
+                      future: SavedService()
+                          .selectGeoBusStation(_savedStations[index]),
+                      builder: (ctx, asyncSnapShot) {
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MapLocations(
+                                        selectStation: _savedStations[index],
+                                        selectCoords: _savedStations[index],
+                                        appBar: _savedStations[index],
+                                        initialLat:
+                                            asyncSnapShot.data['latitude'],
+                                        initialLong:
+                                            asyncSnapShot.data['longitude'],
+                                      )),
+                            );
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  padding: EdgeInsets.only(left: 12),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    _savedStations[index],
+                                    style: AppStyles.Results(),
+                                  ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                      ),
+                          ),
+                        );
+                      },
                     ),
                   );
                 }),
@@ -160,7 +180,19 @@ class ListBuilder extends StatelessWidget {
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(left: 20),
             child: GestureDetector(
-                onTap: () {;
+                onTap: () {
+                  print(_closest['short_name']);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MapLocations(
+                              selectStation: _closest['short_name'],
+                              selectCoords: _closest['short_name'],
+                              appBar: _closest['short_name'],
+                              initialLat: _closest['latitude'],
+                              initialLong: _closest['longitude'],
+                            )),
+                  );
                 },
                 child: Text(
                   _closest['short_name'],
@@ -170,15 +202,13 @@ class ListBuilder extends StatelessWidget {
           DashboardTile("ALL STATIONS", 50.0),
           DashboardResultTile(
               "All stations",
-              Saved()
-//              MapLocations(
-//                selectStation: 'All',
-//                appBar: "All Stations",
-//                selectCoords: null,
-//                initialLat: 0,
-//                initialLong: 0,
-//              )
-          )
+              MapLocations(
+                selectStation: 'All',
+                appBar: "All Stations",
+                selectCoords: null,
+                initialLat: 0,
+                initialLong: 0,
+              ))
         ],
       ),
     );

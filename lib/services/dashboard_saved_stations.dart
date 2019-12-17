@@ -1,56 +1,56 @@
 import 'dart:async';
+import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 
 class SavedService {
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
-
-
   Future addtoList(String station) async {
+    SharedPreferences prefs = await _getSharedPreference();
 
-    final SharedPreferences prefs = await _prefs;
-    var list = await selectSavedStation();
+    var savedStations = await selectSavedStation();
 
-    if (list != null && list.length > 0) {
-      print("length of list" + list.length.toString());
-      var existsStation = list.any((x) => x == station.trim());
-      print(existsStation);
+    if (savedStations.isNotEmpty) {
+      var existsStation = savedStations.any((x) => x == station.trim());
+
       if (!existsStation) {
-        list.add(station);
-        prefs.setStringList('savedStations', list);
-        print('added item');
-
+        savedStations.add(station);
+        _saveLocal(prefs, savedStations);
       }
     } else {
-      var x = List<String>();
-      x.add(station);
-      prefs.setStringList('savedStations', x);
-      print('added first item');
-
+      _saveLocal(prefs, [station]);
     }
   }
 
   Future<List<String>> selectSavedStation() async {
-    final SharedPreferences prefs = await _prefs;
-    var name = prefs.getStringList('savedStations');
-
-    if (name == null) {
-      return null;
-    }
-    ;
-    print(name.length);
-    return name;
+    SharedPreferences prefs = await _getSharedPreference();
+    return prefs.getStringList('savedStations');
   }
 
-  Future deleteFromDashboard(int index) async {
-    final SharedPreferences prefs = await _prefs;
+  Future deleteSavedStation(int index) async {
+    SharedPreferences prefs = await _getSharedPreference();
     var list = await selectSavedStation();
     list.removeAt(index);
-    prefs.setStringList('savedStations', list);
-
+    _saveLocal(prefs, list);
   }
 
+  void _saveLocal(SharedPreferences prefs, List<String> list) {
+    prefs.setStringList('savedStations', list);
+  }
 
+  Future<Map<String, dynamic>> selectGeoBusStation(String shortName) async {
+    String busStationsJson =
+    await rootBundle.loadString('assets/locations/BusStations.json');
 
+    List<dynamic> busStations = json.decode(busStationsJson);
+
+    return busStations.singleWhere((element) {
+      return element["short_name"] == shortName;
+    });
+  }
+
+  Future<SharedPreferences> _getSharedPreference() async {
+    return await _prefs;
+  }
 }
