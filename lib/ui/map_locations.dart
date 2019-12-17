@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:gtbuddy/models/bus_live.dart';
+import 'package:gtbuddy/models/map_bus_live.dart';
 import 'package:gtbuddy/ui/tiles/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
