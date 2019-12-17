@@ -1,21 +1,21 @@
 // To parse this JSON data, do
 //
-//     final savedStations = savedStationsFromJson(jsonString);
+//     final locations = locationsFromJson(jsonString);
 
 import 'dart:convert';
 
-List<SavedStations> savedStationsFromJson(String str) => List<SavedStations>.from(json.decode(str).map((x) => SavedStations.fromJson(x)));
+List<Locations> locationsFromJson(String str) => List<Locations>.from(json.decode(str).map((x) => Locations.fromJson(x)));
 
-String savedStationsToJson(List<SavedStations> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String locationsToJson(List<Locations> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class SavedStations {
+class Locations {
     double longitude;
     double latitude;
     String shortName;
     String code;
     int sort;
 
-    SavedStations({
+    Locations({
         this.longitude,
         this.latitude,
         this.shortName,
@@ -23,7 +23,7 @@ class SavedStations {
         this.sort,
     });
 
-    factory SavedStations.fromJson(Map<String, dynamic> json) => SavedStations(
+    factory Locations.fromJson(Map<String, dynamic> json) => Locations(
         longitude: json["longitude"].toDouble(),
         latitude: json["latitude"].toDouble(),
         shortName: json["short_name"],

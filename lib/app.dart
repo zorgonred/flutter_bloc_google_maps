@@ -1,17 +1,27 @@
-import 'package:bloc_pattern/bloc_pattern.dart';
-import 'package:gtbuddy/blocs/location_bloc.dart';
-import 'package:gtbuddy/blocs/station_bloc.dart';
-import 'package:gtbuddy/ui/dashboard.dart';
-import 'package:gtbuddy/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gtbuddy/ui/dashBoard.dart';
+import 'package:gtbuddy/ui/splash_screen.dart';
+import 'blocs/dashboard/dashboard_bloc.dart';
+import 'blocs/location_list/locationlist_bloc.dart';
+
 
 class GtBuddyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      blocs: [
-        Bloc((c) => LocationBloc()),
-        Bloc((c) => StationBloc())
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<LocationlistBloc>(
+          create: (BuildContext context) {
+            return LocationlistBloc();
+          },
+        ),
+        BlocProvider<DashboardSavedBloc>(
+          create: (BuildContext context) {
+            return DashboardSavedBloc();
+          },
+        ),
+
       ],
       child: MaterialApp(
         title: 'GTBuddy',
@@ -39,5 +49,16 @@ class GtBuddyApp extends StatelessWidget {
         },
       ),
     );
+
+//  @override
+//  Widget build(BuildContext context) {
+//    // TODO: implement build
+//    return MaterialApp(
+//      home: BlocProvider<LocationlistBloc>.value(
+//        value: LocationlistBloc(),
+//        child: SplashScreen(),
+//      ),
+//    );
+//  }
   }
 }
