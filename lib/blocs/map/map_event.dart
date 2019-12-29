@@ -12,12 +12,12 @@ class GetMapLocations extends MapEvent {
   final String selectStation;
   final String selectCoords;
   final String appBar;
-  var initialLat;
-  var initialLong;
+  final double initialLat;
+  final double initialLong;
 
-  GetMapLocations(this.selectStation, this.selectCoords, this.appBar,this.initialLat, this.initialLong);
+
+  const GetMapLocations({this.selectStation, this.selectCoords, this.appBar,this.initialLat, this.initialLong});
 
   @override
-  // TODO: implement props
-  List<Object> get props => null;
+  List<Object> get props => [selectStation,selectCoords,appBar,initialLat,initialLong];
 }

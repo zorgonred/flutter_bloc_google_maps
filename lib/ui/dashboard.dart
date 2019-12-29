@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gtbuddy/blocs/dashboard/dashboard_bloc.dart';
 import 'package:gtbuddy/blocs/dashboard/dashboard_event.dart';
 import 'package:gtbuddy/blocs/dashboard/dashboard_state.dart';
+import 'package:gtbuddy/blocs/map/map_bloc.dart';
+import 'package:gtbuddy/blocs/map/map_event.dart';
 import 'package:gtbuddy/services/dashboard_saved_stations.dart';
 import 'package:gtbuddy/ui/tiles/dashboard_header_tile.dart';
 import 'package:gtbuddy/ui/tiles/dashboard_result_tile.dart';
@@ -136,19 +138,33 @@ class ListBuilder extends StatelessWidget {
                       builder: (ctx, asyncSnapShot) {
                         return GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => MapLocations(
-                                        selectStation: _savedStations[index],
-                                        selectCoords: _savedStations[index],
-                                        appBar: _savedStations[index],
-                                        initialLat:
-                                            asyncSnapShot.data['latitude'],
-                                        initialLong:
-                                            asyncSnapShot.data['longitude'],
-                                      )),
-                            );
+//                            Navigator.push(
+//                              context,
+//                              MaterialPageRoute(
+//                                  builder: (context) => MapLocations(
+//                                        selectStation: _savedStations[index],
+//                                        selectCoords: _savedStations[index],
+//                                        appBar: _savedStations[index],
+//                                        initialLat:
+//                                            asyncSnapShot.data['latitude'],
+//                                        initialLong:
+//                                            asyncSnapShot.data['longitude'],
+//                                      )),
+//                            );
+
+                            BlocProvider.of<MapBloc>(context).add(
+                                GetMapLocations(
+                                    selectStation: _savedStations[index],
+                                    selectCoords: _savedStations[index],
+                                    appBar: _savedStations[index],
+                                    initialLat: asyncSnapShot.data['latitude'],
+                                    initialLong:
+                                        asyncSnapShot.data['longitude']));
+
+                            Navigator.pushReplacement(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) => HomeScreen()));
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(10.0),
