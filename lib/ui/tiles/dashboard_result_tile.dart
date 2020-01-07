@@ -3,8 +3,8 @@ import 'package:gtbuddy/utils/text_style.dart';
 import 'package:flutter/material.dart';
 
 class DashboardResultTile extends StatelessWidget {
-  String text;
-  Widget page;
+  final String text;
+  final Widget page;
 
   DashboardResultTile(this.text, this.page);
 
@@ -13,19 +13,16 @@ class DashboardResultTile extends StatelessWidget {
     return Container(
       height: 40,
       alignment: Alignment.centerLeft,
-      decoration: BoxDecoration(
-        color: Pallete.BarColor,
-      ),
+      color: Pallete.BarColor,
       padding: const EdgeInsets.only(left: 20),
       child: GestureDetector(
-          onTap: () {
-            Navigator.of(context).push(new MaterialPageRoute<Null>(
-                builder: (BuildContext context) {
-                  return page;
-                },
-                fullscreenDialog: true));
-          },
-          child: Text("$text",style: AppStyles.Results(),)),
+        onTap: () {
+          Navigator.of(context).push(
+            new MaterialPageRoute<Null>(builder: (BuildContext context) => page, fullscreenDialog: true),
+          );
+        },
+        child: Text("$text", style: AppStyles.Results()),
+      ),
     );
   }
 }

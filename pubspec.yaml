@@ -18,7 +18,7 @@ dependencies:
   google_maps_flutter: ^0.5.21+8
   shared_preferences: ^0.5.4+5
   permission_handler: ^3.0.1
-  http: ^0.12.0+2
+  http: ^0.12.0+4
   flutter_bloc: ^2.0.0
   meta: ^1.1.6
   equatable: ^0.6.0

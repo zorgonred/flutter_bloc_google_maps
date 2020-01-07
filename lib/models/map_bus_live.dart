@@ -18,14 +18,14 @@ class LiveBus {
   });
 
   factory LiveBus.fromJson(Map<String, dynamic> json) => LiveBus(
-    timestamp: json["Timestamp"],
-    result: Result.fromJson(json["Result"]),
-  );
+        timestamp: json["Timestamp"],
+        result: Result.fromJson(json["Result"]),
+      );
 
   Map<String, dynamic> toJson() => {
-    "Timestamp": timestamp,
-    "Result": result.toJson(),
-  };
+        "Timestamp": timestamp,
+        "Result": result.toJson(),
+      };
 }
 
 class Result {
@@ -35,13 +35,9 @@ class Result {
     this.busPositions,
   });
 
-  factory Result.fromJson(Map<String, dynamic> json) => Result(
-    busPositions: List<BusPosition>.from(json["busPositions"].map((x) => BusPosition.fromJson(x))),
-  );
+  factory Result.fromJson(Map<String, dynamic> json) => Result(busPositions: List<BusPosition>.from(json["busPositions"].map((x) => BusPosition.fromJson(x))));
 
-  Map<String, dynamic> toJson() => {
-    "busPositions": List<dynamic>.from(busPositions.map((x) => x.toJson())),
-  };
+  Map<String, dynamic> toJson() => {"busPositions": List<dynamic>.from(busPositions.map((x) => x.toJson()))};
 }
 
 class BusPosition {
@@ -68,26 +64,26 @@ class BusPosition {
   });
 
   factory BusPosition.fromJson(Map<String, dynamic> json) => BusPosition(
-    busId: json["busId"],
-    currsegment: json["currsegment"],
-    formattedLastModified: json["formattedLastModified"],
-    heading: json["heading"],
-    lastModified: json["lastModified"],
-    latitude: json["latitude"].toDouble(),
-    longitude: json["longitude"].toDouble(),
-    remainonsegment: json["remainonsegment"].toDouble(),
-    routecode: json["routecode"],
-  );
+        busId: json["busId"],
+        currsegment: json["currsegment"],
+        formattedLastModified: json["formattedLastModified"],
+        heading: json["heading"],
+        lastModified: json["lastModified"],
+        latitude: json["latitude"].toDouble(),
+        longitude: json["longitude"].toDouble(),
+        remainonsegment: json["remainonsegment"].toDouble(),
+        routecode: json["routecode"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "busId": busId,
-    "currsegment": currsegment,
-    "formattedLastModified": formattedLastModified,
-    "heading": heading,
-    "lastModified": lastModified,
-    "latitude": latitude,
-    "longitude": longitude,
-    "remainonsegment": remainonsegment,
-    "routecode": routecode,
-  };
+        "busId": busId,
+        "currsegment": currsegment,
+        "formattedLastModified": formattedLastModified,
+        "heading": heading,
+        "lastModified": lastModified,
+        "latitude": latitude,
+        "longitude": longitude,
+        "remainonsegment": remainonsegment,
+        "routecode": routecode,
+      };
 }

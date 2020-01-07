@@ -14,9 +14,7 @@ import 'dashboard.dart';
 
 class LocList extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return LocListState();
-  }
+  State<StatefulWidget> createState() => LocListState();
 }
 
 class LocListState extends State<LocList> {
@@ -26,16 +24,10 @@ class LocListState extends State<LocList> {
       appBar: AppBar(
         title: Text("Select From"),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios),
-          onPressed: () => Navigator.pop(context, false),
-        ),
+        leading: IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: () => Navigator.pop(context, false)),
         backgroundColor: Pallete.appBarColor,
       ),
-      body: BlocProvider(
-        create: (ctx) => LocationListBloc(),
-        child: LocationLists(),
-      ),
+      body: BlocProvider(create: (ctx) => LocationListBloc(), child: LocationLists()),
     );
   }
 }
@@ -86,7 +78,7 @@ class _LocationListsState extends State<LocationLists> {
 }
 
 class ListBuilder extends StatelessWidget {
-  List<Locations> _savedStations;
+  final List<Locations> _savedStations;
 
   ListBuilder(this._savedStations);
 
@@ -102,38 +94,29 @@ class ListBuilder extends StatelessWidget {
               height: MediaQuery.of(context).size.height,
               color: Pallete.BackgroundColour,
               child: ListView.separated(
-                  separatorBuilder: (context, index) => Divider(),
-                  itemCount: _savedStations.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return GestureDetector(
-                      onTap: () {
-                        BlocProvider.of<DashboardSavedBloc>(context).add(
-                            AddSaved(selected: _savedStations[index].shortName));
-
-                        Navigator.pushReplacement(
-                            context,
-                            new MaterialPageRoute(
-                                builder: (context) => HomeScreen()));
-
-//                        BlocProvider.of<DashboardSavedBloc>(context).add(UpdateSaved());
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              padding: EdgeInsets.only(left: 12),
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                _savedStations[index].shortName,
-                                style: AppStyles.Results(),
-                              ),
-                            ),
-                          ],
-                        ),
+                separatorBuilder: (context, index) => Divider(),
+                itemCount: _savedStations.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return GestureDetector(
+                    onTap: () {
+                      BlocProvider.of<DashboardSavedBloc>(context).add(AddSaved(selected: _savedStations[index].shortName));
+                      Navigator.pushReplacement(context, new MaterialPageRoute(builder: (context) => HomeScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 12),
+                            alignment: Alignment.centerLeft,
+                            child: Text(_savedStations[index].shortName, style: AppStyles.Results()),
+                          ),
+                        ],
                       ),
-                    );
-                  }),
+                    ),
+                  );
+                },
+              ),
             ),
           ],
         ),

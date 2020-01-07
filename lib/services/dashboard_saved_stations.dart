@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SavedService {
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
-  Future addtoList(String station) async {
+  Future addToList(String station) async {
     SharedPreferences prefs = await _getSharedPreference();
 
     var savedStations = await selectSavedStation();
@@ -40,8 +40,7 @@ class SavedService {
   }
 
   Future<Map<String, dynamic>> selectGeoBusStation(String shortName) async {
-    String busStationsJson =
-    await rootBundle.loadString('assets/locations/BusStations.json');
+    String busStationsJson = await rootBundle.loadString('assets/locations/BusStations.json');
 
     List<dynamic> busStations = json.decode(busStationsJson);
 

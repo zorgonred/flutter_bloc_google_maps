@@ -5,23 +5,17 @@ import 'package:gtbuddy/ui/splash_screen.dart';
 import 'blocs/dashboard/dashboard_bloc.dart';
 import 'blocs/location_list/location_list_bloc.dart';
 
-
 class GtBuddyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider<LocationListBloc>(
-          create: (BuildContext context) {
-            return LocationListBloc();
-          },
+          create: (BuildContext context) => LocationListBloc(),
         ),
         BlocProvider<DashboardSavedBloc>(
-          create: (BuildContext context) {
-            return DashboardSavedBloc();
-          },
+          create: (BuildContext context) => DashboardSavedBloc(),
         ),
-
       ],
       child: MaterialApp(
         title: 'GTBuddy',
@@ -49,16 +43,5 @@ class GtBuddyApp extends StatelessWidget {
         },
       ),
     );
-
-//  @override
-//  Widget build(BuildContext context) {
-//    // TODO: implement build
-//    return MaterialApp(
-//      home: BlocProvider<LocationlistBloc>.value(
-//        value: LocationlistBloc(),
-//        child: SplashScreen(),
-//      ),
-//    );
-//  }
   }
 }

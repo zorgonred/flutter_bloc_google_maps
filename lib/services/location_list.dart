@@ -3,10 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:gtbuddy/models/locations.dart';
 
 class LocationList {
-
   Future<List<Locations>> fetchLocations() async {
-    String fetchLocations =
-        await rootBundle.loadString('assets/locations/BusStations.json');
+    String fetchLocations = await rootBundle.loadString('assets/locations/BusStations.json');
 
     List<dynamic> parsedJson = jsonDecode(fetchLocations);
 

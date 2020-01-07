@@ -3,8 +3,8 @@ import 'package:gtbuddy/utils/text_style.dart';
 import 'package:flutter/material.dart';
 
 class DashboardTile extends StatelessWidget {
-  String text;
-  double height;
+  final String text;
+  final double height;
 
   DashboardTile(this.text, this.height);
 
@@ -14,15 +14,10 @@ class DashboardTile extends StatelessWidget {
       alignment: Alignment.bottomLeft,
       width: 400,
       height: height,
-      decoration: BoxDecoration(
-        color: Pallete.BarHeadColor,
-      ),
+      color: Pallete.BarHeadColor,
       child: Padding(
         padding: const EdgeInsets.only(left: 8.0, bottom: 5),
-        child: Text(
-          '$text',
-          style: AppStyles.Header(),
-        ),
+        child: Text('$text', style: AppStyles.Header()),
       ),
     );
   }

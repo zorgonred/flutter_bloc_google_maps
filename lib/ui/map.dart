@@ -11,15 +11,10 @@ class MapLocations extends StatefulWidget {
   final String selectStation;
   final String selectCoords;
   final String appBar;
-  var initialLat;
-  var initialLong;
+  final double initialLat;
+  final double initialLong;
 
-  MapLocations(
-      {this.selectStation,
-      this.selectCoords,
-      this.appBar,
-      this.initialLat,
-      this.initialLong});
+  MapLocations({this.selectStation, this.selectCoords, this.appBar, this.initialLat, this.initialLong});
 
   @override
   _MapLocationsState createState() => _MapLocationsState();
@@ -27,7 +22,7 @@ class MapLocations extends StatefulWidget {
 
 class _MapLocationsState extends State<MapLocations> {
   BitmapDescriptor _customIconForBusStations;
-  BitmapDescriptor _custoIconForLiveBus;
+  BitmapDescriptor _customIconForLiveBus;
   StreamSubscription _liveBusStationsStream;
   GoogleMapController _controller;
   Future _futureBusStops;
@@ -40,9 +35,9 @@ class _MapLocationsState extends State<MapLocations> {
   static const LatLng _center = const LatLng(33.738045, 73.084488);
   LatLng _lastMapPosition = _center;
 
+  // TODO move this to state / "repo"
   loadMyStations() async {
-    var stringJson =
-        await rootBundle.loadString('assets/bus_stops/AllBusStops.json');
+    var stringJson = await rootBundle.loadString('assets/bus_stops/AllBusStops.json');
     var parsedJson = json.decode(stringJson);
     List listStations = parsedJson['Result']['routes'][0]['bs'];
     var stationsEncode = json.encode(listStations);
@@ -52,9 +47,7 @@ class _MapLocationsState extends State<MapLocations> {
   createMarkerForBusStations(context) {
     if (_customIconForBusStations == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
-      BitmapDescriptor.fromAssetImage(
-              configuration, 'assets/icons/bus_stop/bus_stop@2x.png')
-          .then((icon) {
+      BitmapDescriptor.fromAssetImage(configuration, 'assets/icons/bus_stop/bus_stop@2x.png').then((icon) {
         setState(() {
           _customIconForBusStations = icon;
         });
@@ -63,35 +56,31 @@ class _MapLocationsState extends State<MapLocations> {
   }
 
   createMarkerLiveBus(context) {
-    if (_custoIconForLiveBus == null) {
+    if (_customIconForLiveBus == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
-      BitmapDescriptor.fromAssetImage(
-              configuration, 'assets/icons/live_bus/bus_position@2x.png')
-          .then((icon) {
+      BitmapDescriptor.fromAssetImage(configuration, 'assets/icons/live_bus/bus_position@2x.png').then((icon) {
         setState(() {
-          _custoIconForLiveBus = icon;
+          _customIconForLiveBus = icon;
         });
       });
     }
   }
 
+  // TODO Move to block
   Future<String> _loadBusStopsBySelectedStation() async {
-    if (widget.selectStation != 'All')
-      return await rootBundle
-          .loadString('assets/bus_stops/stops_${widget.selectStation}.json');
+    if (widget.selectStation != 'All') return await rootBundle.loadString('assets/bus_stops/stops_${widget.selectStation}.json');
     return await loadMyStations();
   }
 
+  // TODO Move to block
   Future<String> _loadRoutesBySelectedStation() async {
-    if (widget.selectStation != 'All')
-      return await rootBundle.loadString(
-          'assets/routes_strings/coords_${widget.selectStation}.json');
+    if (widget.selectStation != 'All') return await rootBundle.loadString('assets/routes_strings/coords_${widget.selectStation}.json');
     return await rootBundle.loadString('assets/bus_stops/AllBusStops.json');
   }
 
-  Future<LiveBus> _liveBusStatisonFromAPI() async {
-    final response = await http
-        .get("$_baseUrl/$_command${widget.selectStation.toLowerCase()}");
+  // TODO Move to block
+  Future<LiveBus> _liveBusStationFromAPI() async {
+    final response = await http.get("$_baseUrl/$_command${widget.selectStation.toLowerCase()}");
     return LiveBus.fromJson(json.decode(response.body));
   }
 
@@ -109,23 +98,20 @@ class _MapLocationsState extends State<MapLocations> {
   }
 
   Future _busMonitor() async {
-    _liveBusStationsStream =
-        Stream.periodic(Duration(seconds: 5)).listen((data) async {
-      LiveBus jsonParsed = await _liveBusStatisonFromAPI();
+    _liveBusStationsStream = Stream.periodic(Duration(seconds: 5)).listen((data) async {
+      LiveBus jsonParsed = await _liveBusStationFromAPI();
 
       jsonParsed.result.busPositions.forEach((f) {
         var markerId = _createMarketId('${f.busId}_live_bus');
 
         setState(() {
-          markers[markerId] = _createMarketOnMap(
-              markerId, _custoIconForLiveBus, f.latitude, f.longitude);
+          markers[markerId] = _createMarketOnMap(markerId, _customIconForLiveBus, f.latitude, f.longitude);
         });
       });
     });
   }
 
-  Marker _createMarketOnMap(
-      MarkerId id, BitmapDescriptor icon, double lat, double lng) {
+  Marker _createMarketOnMap(MarkerId id, BitmapDescriptor icon, double lat, double lng) {
     if (lat == null || lng == null) return null;
 
     return Marker(markerId: id, icon: icon, position: LatLng(lat, lng));
@@ -138,7 +124,7 @@ class _MapLocationsState extends State<MapLocations> {
   void _defaultFunctionsOnStart() {
     _futureBusStops = _loadBusStopsBySelectedStation();
     _futureRoutes = _loadRoutesBySelectedStation();
-    _futureLiveBus = _liveBusStatisonFromAPI();
+    _futureLiveBus = _liveBusStationFromAPI();
   }
 
   @override
@@ -149,59 +135,44 @@ class _MapLocationsState extends State<MapLocations> {
       appBar: AppBar(
         title: Text('${widget.appBar}'),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios),
-          onPressed: () => Navigator.pop(context, false),
-        ),
+        leading: IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: () => Navigator.pop(context, false)),
         backgroundColor: Color.fromRGBO(59, 62, 64, 1),
         actions: <Widget>[
           FlatButton(
             onPressed: () {},
             textColor: Colors.white,
-            child: Text(
-              "Nearest",
-              style: TextStyle(color: Colors.white),
+            child: Text("Nearest", style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+      body: Stack(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: FutureBuilder(
+              future: Future.wait([_futureBusStops, _futureRoutes, _futureLiveBus]),
+              builder: (
+                context,
+                AsyncSnapshot<List> snapshot,
+              ) {
+                if (!snapshot.hasData) {
+                  return CustomLoading();
+                }
+                _createMarkersForBusStop(snapshot);
+                _createInitialMarkesForLiveBus(snapshot);
+
+                return GoogleMap(
+                  initialCameraPosition: CameraPosition(target: widget.selectStation != 'All' ? LatLng(widget.initialLat, widget.initialLong) : LatLng(-25.851942, 28.189608), zoom: 8.0),
+                  markers: Set<Marker>.of(markers.values),
+                  onMapCreated: _mapCreated,
+                  polylines: _createPolylineBetweenStations(snapshot),
+                );
+              },
             ),
           ),
         ],
       ),
-      body: Stack(children: [
-        Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child: FutureBuilder(
-            future:
-                Future.wait([_futureBusStops, _futureRoutes, _futureLiveBus]),
-            builder: (
-              context,
-              AsyncSnapshot<List> snapshot,
-            ) {
-              if (!snapshot.hasData) {
-                return CustomLoading();
-              }
-              _createMarkesForBusStop(snapshot);
-              _createInitialMarkesForLiveBus(snapshot);
-
-              return GoogleMap(
-                initialCameraPosition: CameraPosition(
-                    target: widget.selectStation != 'All'
-                        ? LatLng(
-                            widget.initialLat,
-                            widget.initialLong,
-                          )
-                        : LatLng(
-                            -25.851942,
-                            28.189608,
-                          ),
-                    zoom: 8.0),
-                markers: Set<Marker>.of(markers.values),
-                onMapCreated: _mapCreated,
-                polylines: _createPolylineBetweenStations(snapshot),
-              );
-            },
-          ),
-        ),
-      ]),
     );
   }
 
@@ -238,14 +209,12 @@ class _MapLocationsState extends State<MapLocations> {
       List<LatLng> latlng = [];
       if (widget.selectStation != 'All') {
         coords.forEach((i) {
-          latlng.add(LatLng(double.tryParse(i["latitude"] ?? 0.0),
-              double.tryParse(i["longitude"] ?? 0.0)));
+          latlng.add(LatLng(double.tryParse(i["latitude"] ?? 0.0), double.tryParse(i["longitude"] ?? 0.0)));
 
           hexToColor(String code) {
             String hash = "#";
             hash += code;
-            return new Color(
-                int.parse(hash.substring(1, 7), radix: 16) + 0xFF000000);
+            return new Color(int.parse(hash.substring(1, 7), radix: 16) + 0xFF000000);
           }
 
           allPolylinesByPosition.add(
@@ -264,13 +233,12 @@ class _MapLocationsState extends State<MapLocations> {
     return allPolylinesByPosition;
   }
 
-  void _createMarkesForBusStop(AsyncSnapshot<List> snapshot) {
+  void _createMarkersForBusStop(AsyncSnapshot<List> snapshot) {
     List<dynamic> parsedJson = jsonDecode(snapshot.data[0]);
 
     parsedJson.forEach((element) {
       var markerId = _createMarketId('${element['StopNumber']}_future_1');
-      markers[markerId] = _createMarketOnMap(markerId,
-          _customIconForBusStations, element['Latitude'], element['Longitude']);
+      markers[markerId] = _createMarketOnMap(markerId, _customIconForBusStations, element['Latitude'], element['Longitude']);
     });
   }
 
@@ -279,8 +247,7 @@ class _MapLocationsState extends State<MapLocations> {
 
     parsedJson.result.busPositions.forEach((f) {
       var markerId = _createMarketId('${f.busId}_future_2');
-      markers[markerId] = _createMarketOnMap(
-          markerId, _customIconForBusStations, f.latitude, f.longitude);
+      markers[markerId] = _createMarketOnMap(markerId, _customIconForBusStations, f.latitude, f.longitude);
     });
   }
 

@@ -7,8 +7,8 @@ class Routes {
 
     Routes({this.name, this.colour, this.coords});
 
-    Routes.fromJson(Map<String, dynamic> json) {
-        name = json['name'];
+  Routes.fromJson(Map<String, dynamic> json) {
+    name = json['name'];
         colour = json['colour'];
         if (json['coords'] != null) {
             coords = new List<Coords>();

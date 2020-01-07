@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:gtbuddy/utils/colour_pallete.dart';
 import 'dashboard.dart';
 
-
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -33,9 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Stack(
       fit: StackFit.expand,
       children: <Widget>[
-        Container(
-          decoration: BoxDecoration(color: Pallete.appBarColor),
-        ),
+        Container(decoration: BoxDecoration(color: Pallete.appBarColor)),
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[

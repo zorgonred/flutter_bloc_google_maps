@@ -1,19 +1,14 @@
-import 'package:geocoder/geocoder.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 
 class ClosestStation {
-
   Future<Map<String, dynamic>> closestLocation() async {
-    Position currentPosition = await Geolocator()
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
+    Position currentPosition = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
 
-    String busStationsJson =
-    await rootBundle.loadString('assets/locations/BusStations.json');
+    String busStationsJson = await rootBundle.loadString('assets/locations/BusStations.json');
 
-    final busStations =
-    json.decode(busStationsJson).cast<Map<String, dynamic>>();
+    final busStations = json.decode(busStationsJson).cast<Map<String, dynamic>>();
 
     var nearest;
 

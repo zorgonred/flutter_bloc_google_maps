@@ -17,9 +17,7 @@ import 'map.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return HomeScreenState();
-  }
+  State<StatefulWidget> createState() => HomeScreenState();
 }
 
 class HomeScreenState extends State<HomeScreen> {
@@ -34,10 +32,7 @@ class HomeScreenState extends State<HomeScreen> {
           FlatButton(
             textColor: Pallete.White,
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => LocList()),
-              );
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LocList()));
             },
             child: Icon(Icons.add),
           ),
@@ -79,11 +74,12 @@ class SavedState extends State<Saved> {
             return CustomLoading();
           } else if (state is SavedLoaded) {
             print('loaded');
-            return ListBuilder(state.savedStationss, state.closest);
+            return ListBuilder(state.savedStations, state.closest);
           } else if (state is SavedNotLoaded) {
             print('Problem');
             return CustomLoading();
           }
+          return null;
         },
       ),
     );
@@ -96,9 +92,16 @@ class SavedState extends State<Saved> {
   }
 }
 
+/*
+TODO:
+1. Cater for empty saved stations. Display message "No saved stations yet"
+2.
+ */
+
+
 class ListBuilder extends StatelessWidget {
-  List<String> _savedStations;
-  Map<String, dynamic> _closest;
+  final List<String> _savedStations;
+  final Map<String, dynamic> _closest;
 
   ListBuilder(this._savedStations, this._closest);
 
@@ -113,31 +116,26 @@ class ListBuilder extends StatelessWidget {
             height: 180,
             color: Pallete.BackgroundColour,
             child: ListView.separated(
-                separatorBuilder: (context, index) => Divider(),
-                itemCount: _savedStations.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Dismissible(
-                    key: Key(_savedStations[index]),
-                    onDismissed: (direction) {
-                      _savedStations.removeAt(index);
-                      SavedService().deleteSavedStation(index);
-                      Scaffold.of(context).showSnackBar(
-                          new SnackBar(content: Text("Station Removed")));
-                    },
-                    background: Container(
-                      alignment: AlignmentDirectional.centerEnd,
-                      color: Pallete.Red,
-                      child: Icon(
-                        Icons.delete,
-                        color: Pallete.White,
-                      ),
-                    ),
-                    child: FutureBuilder(
-                      future: SavedService()
-                          .selectGeoBusStation(_savedStations[index]),
-                      builder: (ctx, asyncSnapShot) {
-                        return GestureDetector(
-                          onTap: () {
+              separatorBuilder: (context, index) => Divider(),
+              itemCount: _savedStations != null ? _savedStations.length : 0,
+              itemBuilder: (BuildContext context, int index) {
+                return Dismissible(
+                  key: Key(_savedStations[index]),
+                  onDismissed: (direction) {
+                    _savedStations.removeAt(index);
+                    SavedService().deleteSavedStation(index);
+                    Scaffold.of(context).showSnackBar(new SnackBar(content: Text("Station Removed")));
+                  },
+                  background: Container(
+                    alignment: AlignmentDirectional.centerEnd,
+                    color: Pallete.Red,
+                    child: Icon(Icons.delete, color: Pallete.White),
+                  ),
+                  child: FutureBuilder(
+                    future: SavedService().selectGeoBusStation(_savedStations[index]),
+                    builder: (ctx, asyncSnapShot) {
+                      return GestureDetector(
+                        onTap: () {
 //                            Navigator.push(
 //                              context,
 //                              MaterialPageRoute(
@@ -152,79 +150,73 @@ class ListBuilder extends StatelessWidget {
 //                                      )),
 //                            );
 
-                            BlocProvider.of<MapBloc>(context).add(
-                                GetMapLocations(
-                                    selectStation: _savedStations[index],
-                                    selectCoords: _savedStations[index],
-                                    appBar: _savedStations[index],
-                                    initialLat: asyncSnapShot.data['latitude'],
-                                    initialLong:
-                                        asyncSnapShot.data['longitude']));
-
-                            Navigator.pushReplacement(
-                                context,
-                                new MaterialPageRoute(
-                                    builder: (context) => HomeScreen()));
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  padding: EdgeInsets.only(left: 12),
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-                                    _savedStations[index],
-                                    style: AppStyles.Results(),
-                                  ),
-                                ),
-                              ],
+                          BlocProvider.of<MapBloc>(context).add(
+                            GetMapLocations(
+                              selectStation: _savedStations[index],
+                              selectCoords: _savedStations[index],
+                              appBar: _savedStations[index],
+                              initialLat: asyncSnapShot.data['latitude'],
+                              initialLong: asyncSnapShot.data['longitude'],
                             ),
+                          );
+
+                          Navigator.pushReplacement(context, new MaterialPageRoute(builder: (context) => HomeScreen()));
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.only(left: 12),
+                                alignment: Alignment.centerLeft,
+                                child: Text(_savedStations[index], style: AppStyles.Results()),
+                              ),
+                            ],
                           ),
-                        );
-                      },
-                    ),
-                  );
-                }),
+                        ),
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
           ),
           DashboardTile("CLOSEST STATIONS", 50.0),
           Container(
             height: 40,
-            decoration: BoxDecoration(
-              color: Pallete.White,
-            ),
+            color: Pallete.White,
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(left: 20),
             child: GestureDetector(
-                onTap: () {
-                  print(_closest['short_name']);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => MapLocations(
-                              selectStation: _closest['short_name'],
-                              selectCoords: _closest['short_name'],
-                              appBar: _closest['short_name'],
-                              initialLat: _closest['latitude'],
-                              initialLong: _closest['longitude'],
-                            )),
-                  );
-                },
-                child: Text(
-                  _closest['short_name'],
-                  style: AppStyles.Results(),
-                )),
+              onTap: () {
+                print(_closest['short_name']);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MapLocations(
+                      selectStation: _closest['short_name'],
+                      selectCoords: _closest['short_name'],
+                      appBar: _closest['short_name'],
+                      initialLat: _closest['latitude'],
+                      initialLong: _closest['longitude'],
+                    ),
+                  ),
+                );
+              },
+              child: Text(_closest['short_name'], style: AppStyles.Results()),
+            ),
           ),
           DashboardTile("ALL STATIONS", 50.0),
           DashboardResultTile(
-              "All stations",
-              MapLocations(
-                selectStation: 'All',
-                appBar: "All Stations",
-                selectCoords: null,
-                initialLat: 0,
-                initialLong: 0,
-              ))
+            "All stations",
+            MapLocations(
+              selectStation: 'All',
+              appBar: "All Stations",
+              selectCoords: null,
+              initialLat: 0,
+              initialLong: 0,
+            ),
+          ),
         ],
       ),
     );
