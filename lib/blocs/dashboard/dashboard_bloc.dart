@@ -16,7 +16,9 @@ class DashboardSavedBloc extends Bloc<DashboardSavedEvent, DashboardSavedState> 
     if (event is LoadSaved) {
       var mySavedStations = await SavedService().selectSavedStation();
       var closest = await ClosestStation().closestLocation();
+
       yield SavedLoaded(savedStations: mySavedStations, closest: closest);
+
     } else if (event is AddSaved) {
       var selected = await SavedService().addToList(event.selected);
       yield Add(select: selected);

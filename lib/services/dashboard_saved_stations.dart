@@ -7,24 +7,33 @@ class SavedService {
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   Future addToList(String station) async {
+    print("ok");
     SharedPreferences prefs = await _getSharedPreference();
 
     var savedStations = await selectSavedStation();
 
-    if (savedStations.isNotEmpty) {
+
+    if (savedStations != null && savedStations.isNotEmpty) {
+      print(station);
       var existsStation = savedStations.any((x) => x == station.trim());
 
       if (!existsStation) {
+        print(station);
         savedStations.add(station);
         _saveLocal(prefs, savedStations);
       }
     } else {
-      _saveLocal(prefs, [station]);
+      print(station);
+      var savedStations = List<String>();
+      savedStations.add(station);
+      _saveLocal(prefs, savedStations);
+
     }
   }
 
   Future<List<String>> selectSavedStation() async {
     SharedPreferences prefs = await _getSharedPreference();
+    print('yes');
     return prefs.getStringList('savedStations');
   }
 
@@ -37,6 +46,7 @@ class SavedService {
 
   void _saveLocal(SharedPreferences prefs, List<String> list) {
     prefs.setStringList('savedStations', list);
+    print('ok');
   }
 
   Future<Map<String, dynamic>> selectGeoBusStation(String shortName) async {

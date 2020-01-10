@@ -16,12 +16,16 @@ class MapLocations {
   }
 
   Future<String> loadBusStopsBySelectedStation(selectStation) async {
+    print(selectStation);
+    print("printed");
     if (selectStation != 'All') return await rootBundle.loadString('assets/bus_stops/stops_${selectStation}.json');
     return await loadMyStations();
   }
 
   Future<String> loadRoutesBySelectedStation(selectStation) async {
+    print(selectStation);
     if (selectStation != 'All') return await rootBundle.loadString('assets/routes_strings/coords_${selectStation}.json');
+    print(selectStation );
     return await rootBundle.loadString('assets/bus_stops/AllBusStops.json');
   }
 
@@ -29,4 +33,11 @@ class MapLocations {
     final response = await http.get("$_baseUrl/$_command${selectStation.toLowerCase()}");
     return LiveBus.fromJson(json.decode(response.body));
   }
+
+
+
+
+
+
+
 }

@@ -1,4 +1,6 @@
 import 'package:equatable/equatable.dart';
+import 'package:gtbuddy/models/map_routes.dart';
+import 'package:meta/meta.dart';
 
 abstract class MapEvent extends Equatable {
   const MapEvent();
@@ -10,12 +12,13 @@ abstract class MapEvent extends Equatable {
 class GetMapLocations extends MapEvent {
   final String selectStation;
   final String selectCoords;
-  final String appBar;
   final double initialLat;
   final double initialLong;
 
-  const GetMapLocations({this.selectStation, this.selectCoords, this.appBar, this.initialLat, this.initialLong});
+
+  const GetMapLocations({@required this.selectStation, @required this.selectCoords,
+    @required this.initialLat, @required this.initialLong });
 
   @override
-  List<Object> get props => [selectStation, selectCoords, appBar, initialLat, initialLong];
+  List<Object> get props => [selectStation, selectCoords, initialLat,initialLong ];
 }

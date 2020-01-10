@@ -18,14 +18,23 @@ class Add extends DashboardSavedState {
   Add({this.select});
 }
 
+
+
+
+
 class SavedLoaded extends DashboardSavedState {
   final List<String> savedStations;
   final Map<String, dynamic> closest;
+
 
   SavedLoaded({@required this.savedStations, @required this.closest});
 
   @override
   List<Object> get props => [savedStations, closest];
+
+  @override
+  String toString() =>
+      'SavedLoaded { savedStations: ${savedStations.length} }';
 }
 
 class SavedNotLoaded extends DashboardSavedState {}

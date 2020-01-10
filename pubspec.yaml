@@ -9,17 +9,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  rxdart: ^0.22.5
+
 
   cupertino_icons: ^0.1.2
   json_model:
   build_runner: ^1.0.0
   json_serializable: ^2.0.0
   google_maps_flutter: ^0.5.21+8
-  shared_preferences: ^0.5.4+5
+  shared_preferences: ^0.5.6
   permission_handler: ^3.0.1
   http: ^0.12.0+4
-  flutter_bloc: ^2.0.0
+  flutter_bloc: ^3.1.0
   meta: ^1.1.6
   equatable: ^0.6.0
   bloc_pattern: ^2.3.2
@@ -33,7 +33,9 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+
   uses-material-design: true
+
   assets:
     - assets/routes_refactored/
     - assets/icons/splash_screen/BusIcon.png

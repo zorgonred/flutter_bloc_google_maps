@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gtbuddy/blocs/map/bloc.dart';
 import 'package:gtbuddy/ui/dashBoard.dart';
 import 'package:gtbuddy/ui/splash_screen.dart';
 import 'blocs/dashboard/dashboard_bloc.dart';
@@ -15,6 +16,9 @@ class GtBuddyApp extends StatelessWidget {
         ),
         BlocProvider<DashboardSavedBloc>(
           create: (BuildContext context) => DashboardSavedBloc(),
+        ),
+        BlocProvider<MapBloc>(
+          create: (BuildContext context) => MapBloc(),
         ),
       ],
       child: MaterialApp(

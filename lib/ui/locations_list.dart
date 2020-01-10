@@ -100,6 +100,7 @@ class ListBuilder extends StatelessWidget {
                   return GestureDetector(
                     onTap: () {
                       BlocProvider.of<DashboardSavedBloc>(context).add(AddSaved(selected: _savedStations[index].shortName));
+
                       Navigator.pushReplacement(context, new MaterialPageRoute(builder: (context) => HomeScreen()));
                     },
                     child: Padding(
