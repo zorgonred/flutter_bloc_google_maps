@@ -29,8 +29,10 @@ class MapLocations {
     return await rootBundle.loadString('assets/bus_stops/AllBusStops.json');
   }
 
-  Future<LiveBus> liveBusStatisonFromAPI(selectStation) async {
+  Future<LiveBus> liveBusStatisonFromAPI (selectStation) async {
+
     final response = await http.get("$_baseUrl/$_command${selectStation.toLowerCase()}");
+    print(selectStation);
     return LiveBus.fromJson(json.decode(response.body));
   }
 

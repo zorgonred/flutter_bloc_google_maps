@@ -22,14 +22,13 @@ class MapBloc extends Bloc<MapEvent, MapLocState> {
       double initialLat = event.initialLat;
       double initialLong = event.initialLong;
 
-//      var liveBusStatisonFromAPI = await MapLocations().liveBusStatisonFromAPI(event.selectStation);
+      var liveBusStatisonFromAPI = await MapLocations().liveBusStatisonFromAPI(event.selectStation);
       yield MapLoaded(
           loadRoutesBySelectedStation: loadRoutesBySelectedStation,
           loadBusBySelectedStation: loadBusStopsBySelectedStation,
           initialLat: initialLat,
-          initialLong: initialLong
-
-//        liveBusStatisonFromAPI: liveBusStatisonFromAPI,
+          initialLong: initialLong,
+        liveBusStatisonFromAPI: liveBusStatisonFromAPI,
           );
     }
   }

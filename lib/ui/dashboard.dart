@@ -6,7 +6,7 @@ import 'package:gtbuddy/blocs/dashboard/dashboard_state.dart';
 import 'package:gtbuddy/blocs/map/map_bloc.dart';
 import 'package:gtbuddy/blocs/map/map_event.dart';
 import 'package:gtbuddy/services/dashboard_saved_stations.dart';
-import 'package:gtbuddy/ui/mape.dart';
+import 'package:gtbuddy/ui/map.dart';
 import 'package:gtbuddy/ui/tiles/dashboard_header_tile.dart';
 import 'package:gtbuddy/ui/tiles/dashboard_result_tile.dart';
 import 'package:gtbuddy/ui/tiles/loading.dart';
@@ -232,13 +232,7 @@ class ListBuilder extends StatelessWidget {
           DashboardTile("ALL STATIONS", 50.0),
           DashboardResultTile(
             "All stations",
-            MapLocations(
-              selectStation: 'All',
-              appBar: "All Stations",
-              selectCoords: null,
-              initialLat: 0,
-              initialLong: 0,
-            ),
+            GoogleMapp(_closest['short_name'],_closest['latitude'], _closest['longitude']),
           ),
         ],
       ),

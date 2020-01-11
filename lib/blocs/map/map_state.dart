@@ -21,12 +21,13 @@ class MapLoaded extends MapLocState {
   final String loadBusBySelectedStation;
   final  double initialLat;
   final double initialLong;
+  final LiveBus liveBusStatisonFromAPI;
 
 
 
-  MapLoaded({@required this.loadRoutesBySelectedStation,@required this.loadBusBySelectedStation,@required this.initialLat, @required this.initialLong  });
+  MapLoaded({@required this.loadRoutesBySelectedStation,@required this.loadBusBySelectedStation,@required this.initialLat, @required this.initialLong , @required this.liveBusStatisonFromAPI });
 
   @override
 
-  List<Object> get props => [loadRoutesBySelectedStation, loadBusBySelectedStation, initialLat,initialLong ];
+  List<Object> get props => [loadRoutesBySelectedStation, loadBusBySelectedStation, initialLat,initialLong, liveBusStatisonFromAPI ];
 }
