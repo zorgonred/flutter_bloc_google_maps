@@ -230,10 +230,32 @@ class ListBuilder extends StatelessWidget {
             ),
           ),
           DashboardTile("ALL STATIONS", 50.0),
-          DashboardResultTile(
-            "All stations",
-            GoogleMapp(_closest['short_name'],_closest['latitude'], _closest['longitude']),
-          ),
+      Container(
+        height: 40,
+        alignment: Alignment.centerLeft,
+        color: Pallete.BarColor,
+        padding: const EdgeInsets.only(left: 20),
+        child: GestureDetector(
+          onTap: () {
+            BlocProvider.of<MapBloc>(context).add(
+              GetMapLocations(
+                selectStation: "All",
+                selectCoords: "All",
+                initialLat: 0.0,
+                initialLong: 0.0,
+              ),
+            );
+            Navigator.pushReplacement(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) =>
+                        GoogleMapp('All stations',0.0, 0.0)));
+
+
+          },
+          child: Text("All stations", style: AppStyles.Results()),
+        ),
+      )
         ],
       ),
     );

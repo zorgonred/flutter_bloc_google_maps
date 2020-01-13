@@ -6,19 +6,14 @@ import 'package:gtbuddy/blocs/map/map_bloc.dart';
 import 'package:gtbuddy/blocs/map/map_event.dart';
 import 'package:gtbuddy/blocs/map/map_state.dart';
 import 'package:gtbuddy/models/map_bus_live.dart';
-import 'package:gtbuddy/services/map.dart';
 import 'package:gtbuddy/ui/dashboard.dart';
 import 'package:gtbuddy/ui/tiles/loading.dart';
-import 'package:flutter/services.dart';
 import 'dart:async';
-
-
 
 class GoogleMapp extends StatefulWidget {
   String appBar;
   double initialLat;
   double initialLong;
-
 
   GoogleMapp(this.appBar, this.initialLat, this.initialLong);
 
@@ -39,11 +34,11 @@ class _GoogleMappState extends State<GoogleMapp> {
                 new MaterialPageRoute(builder: (context) => HomeScreen()))),
         backgroundColor: Color.fromRGBO(59, 62, 64, 1),
         actions: <Widget>[
-          FlatButton(
-            onPressed: () {},
-            textColor: Colors.white,
-            child: Text("Nearest", style: TextStyle(color: Colors.white)),
-          ),
+//          FlatButton(
+//            onPressed: () {},
+//            textColor: Colors.white,
+//            child: Text("Nearest", style: TextStyle(color: Colors.white)),
+//          ),
         ],
       ),
       body: BlocProvider(
@@ -59,7 +54,6 @@ class Mapt extends StatefulWidget {
   double initialLat;
   double initialLong;
 
-
   Mapt(this.station, this.initialLat, this.initialLong);
 
   @override
@@ -71,22 +65,18 @@ class _MaptState extends State<Mapt> {
 
   @override
   void initState() {
-
     super.initState();
 
 
     _mapBlocloc = BlocProvider.of<MapBloc>(context);
 
     _mapBlocloc.add(GetMapLocations(
-        selectStation: widget.station,
-        selectCoords: widget.station,
+      selectStation: widget.station,
+      selectCoords: widget.station,
       initialLat: widget.initialLat,
       initialLong: widget.initialLong,
-
     ));
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +92,13 @@ class _MaptState extends State<Mapt> {
           }
           if (state is MapLoaded) {
             print('loaded');
-            return MapBuilder(state.loadRoutesBySelectedStation, state.loadBusBySelectedStation,  state.initialLat, state.initialLong,state.liveBusStatisonFromAPI,);
+            return MapBuilder(
+              state.loadRoutesBySelectedStation,
+              state.loadBusBySelectedStation,
+              state.initialLat,
+              state.initialLong,
+              state.liveBusStatisonFromAPI,
+            );
           } else {
             print('Problem');
             return Text("problem");
@@ -122,8 +118,8 @@ class MapBuilder extends StatefulWidget {
   double initialLong;
   LiveBus liveBusStatisonFromAPI;
 
-
-  MapBuilder(this.loadRoutesBySelectedStation, this.loadBusBySelectedStation, this.initialLat, this.initialLong, this.liveBusStatisonFromAPI);
+  MapBuilder(this.loadRoutesBySelectedStation, this.loadBusBySelectedStation,
+      this.initialLat, this.initialLong, this.liveBusStatisonFromAPI);
 
   @override
   _MapBuilderState createState() => _MapBuilderState();
@@ -147,11 +143,8 @@ class _MapBuilderState extends State<MapBuilder> {
 
   @override
   void initState() {
-
     super.initState();
     _busMonitor();
-
-
   }
 
   @override
@@ -164,40 +157,36 @@ class _MapBuilderState extends State<MapBuilder> {
     return Stack(
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child:
-//          Text(widget.loadRoutesBySelectedStation),
-            GoogleMap(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child:
+                GoogleMap(
               initialCameraPosition: CameraPosition(
                   target: LatLng(
                     widget.initialLat,
                     widget.initialLong,
-                  )
-                      ,
-                  zoom: 8.0),
-
+                  ),
+                  zoom: 13.0),
               onMapCreated: _mapCreated,
               markers: Set<Marker>.of(markers.values),
               polylines: _createPolylineBetweenStations(),
-
-            )
-        )
+            ))
       ],
     );
   }
 
-  Marker _createMarketOnMap(MarkerId id, BitmapDescriptor icon, double lat, double lng) {
+  Marker _createMarketOnMap(
+      MarkerId id, BitmapDescriptor icon, double lat, double lng) {
     if (lat == null || lng == null) return null;
 
-    return Marker(markerId: id,  icon: icon, position: LatLng(lat, lng));
+    return Marker(markerId: id, icon: icon, position: LatLng(lat, lng));
   }
 
   createMarkerForBusStations(context) {
     if (_customIconForBusStations == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
       BitmapDescriptor.fromAssetImage(
-          configuration, 'assets/icons/bus_stop/bus_stop@2x.png')
+              configuration, 'assets/icons/bus_stop/bus_stop@2x.png')
           .then((icon) {
         setState(() {
           _customIconForBusStations = icon;
@@ -209,7 +198,9 @@ class _MapBuilderState extends State<MapBuilder> {
   createMarkerLiveBus(context) {
     if (_customIconForLiveBus == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
-      BitmapDescriptor.fromAssetImage(configuration, 'assets/icons/live_bus/bus_position@2x.png').then((icon) {
+      BitmapDescriptor.fromAssetImage(
+              configuration, 'assets/icons/live_bus/bus_position@2x.png')
+          .then((icon) {
         setState(() {
           _customIconForLiveBus = icon;
         });
@@ -223,25 +214,25 @@ class _MapBuilderState extends State<MapBuilder> {
     jsonParsed.result.busPositions.forEach((f) {
       var markerId = _createMarketId('${f.busId}_future_2');
       markers[markerId] = _createMarketOnMap(
-          markerId, BitmapDescriptor.defaultMarker, f.latitude, f.longitude);
+          markerId, _customIconForLiveBus, f.latitude, f.longitude);
     });
   }
 
   Future _busMonitor() async {
-    _liveBusStationsStream = Stream.periodic(Duration(seconds: 5)).listen((data) async {
+    _liveBusStationsStream =
+        Stream.periodic(Duration(seconds: 5)).listen((data) async {
       LiveBus jsonParsed = await widget.liveBusStatisonFromAPI;
 
       jsonParsed.result.busPositions.forEach((f) {
         var markerId = _createMarketId('${f.busId}_live_bus');
 
         setState(() {
-          markers[markerId] = _createMarketOnMap(markerId,BitmapDescriptor.defaultMarker, f.latitude, f.longitude);
+          markers[markerId] = _createMarketOnMap(markerId,
+              _customIconForLiveBus, f.latitude, f.longitude);
         });
       });
     });
   }
-
-
 
   void _createMarkesForBusStop() {
     List<dynamic> parsedJson = jsonDecode(widget.loadBusBySelectedStation);
@@ -251,7 +242,6 @@ class _MapBuilderState extends State<MapBuilder> {
       markers[markerId] = _createMarketOnMap(markerId,
           _customIconForBusStations, element['Latitude'], element['Longitude']);
     });
-
   }
 
   Set<Polyline> _createPolylineBetweenStations() {
@@ -261,7 +251,9 @@ class _MapBuilderState extends State<MapBuilder> {
 
     parseJson.forEach((element) {
       String coordsString = element["coords"];
-      String color = widget.loadRoutesBySelectedStation != 'All' ? element["colour"] : null;
+      String color = widget.loadRoutesBySelectedStation != 'All'
+          ? element["colour"]
+          : null;
 
       List<Map<String, String>> coords = [];
 

@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 
 class DashboardResultTile extends StatelessWidget {
   final String text;
-  final Widget page;
+  final Widget link;
+  final Widget linkk;
 
-  DashboardResultTile(this.text, this.page);
+  DashboardResultTile(this.text, this.link, this.linkk);
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +18,8 @@ class DashboardResultTile extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20),
       child: GestureDetector(
         onTap: () {
-          Navigator.of(context).push(
-            new MaterialPageRoute<Null>(builder: (BuildContext context) => page, fullscreenDialog: true),
-          );
+          link;
+          linkk;
         },
         child: Text("$text", style: AppStyles.Results()),
       ),
